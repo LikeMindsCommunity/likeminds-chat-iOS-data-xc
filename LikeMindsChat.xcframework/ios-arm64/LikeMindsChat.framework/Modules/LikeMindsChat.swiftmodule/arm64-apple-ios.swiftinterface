@@ -1,0 +1,1821 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LikeMindsChat
+import Alamofire
+import FirebaseCore
+import FirebaseDatabase
+import FirebaseMessaging
+import Foundation
+@_exported import LikeMindsChat
+import Network
+import RealmSwift
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public struct GetExploreFeedResponse : Swift.Decodable {
+  public var pinnedChatroomCount: Swift.Int?
+  public var exploreChatrooms: [LikeMindsChat.Chatroom] {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ConversationStatus : Swift.String, RealmSwift.PersistableEnum {
+  case sending
+  case sent
+  case failed
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [LikeMindsChat.ConversationStatus]
+  public typealias RawValue = Swift.String
+  public static var allCases: [LikeMindsChat.ConversationStatus] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class DeleteReactionRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.DeleteReactionRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String?) -> LikeMindsChat.DeleteReactionRequest.Builder
+    public func chatroomId(_ chatroomId: Swift.String?) -> LikeMindsChat.DeleteReactionRequest.Builder
+    public func build() -> LikeMindsChat.DeleteReactionRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.DeleteReactionRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class Chatroom : Swift.Decodable {
+  public var member: LikeMindsChat.Member? {
+    get
+  }
+  public var id: Swift.String {
+    get
+  }
+  public var title: Swift.String {
+    get
+  }
+  public var createdAt: Swift.String? {
+    get
+  }
+  public var answerText: Swift.String? {
+    get
+  }
+  public var state: Swift.Int {
+    get
+  }
+  public var unseenCount: Swift.Int? {
+    get
+  }
+  public var shareUrl: Swift.String? {
+    get
+  }
+  public var communityId: Swift.String? {
+    get
+  }
+  public var communityName: Swift.String? {
+    get
+  }
+  public var type: Swift.Int? {
+    get
+  }
+  public var about: Swift.String? {
+    get
+  }
+  public var header: Swift.String? {
+    get
+  }
+  public var showFollowTelescope: Swift.Bool? {
+    get
+  }
+  public var showFollowAutoTag: Swift.Bool? {
+    get
+  }
+  public var cardCreationTime: Swift.String? {
+    get
+  }
+  public var participantsCount: Swift.Int? {
+    get
+  }
+  public var totalResponseCount: Swift.Int {
+    get
+  }
+  public var muteStatus: Swift.Bool? {
+    get
+  }
+  public var followStatus: Swift.Bool?
+  public var hasBeenNamed: Swift.Bool? {
+    get
+  }
+  public var hasReactions: Swift.Bool? {
+    get
+  }
+  public var date: Swift.String? {
+    get
+  }
+  public var isTagged: Swift.Bool? {
+    get
+  }
+  public var isPending: Swift.Bool? {
+    get
+  }
+  public var isPinned: Swift.Bool? {
+    get
+  }
+  public var isDeleted: Swift.Bool? {
+    get
+  }
+  public var userId: Swift.String? {
+    get
+  }
+  public var deletedBy: Swift.String? {
+    get
+  }
+  public var deletedByMember: LikeMindsChat.Member? {
+    get
+  }
+  public var updatedAt: Swift.Int? {
+    get
+  }
+  public var lastSeenConversationId: Swift.String? {
+    get
+  }
+  public var lastConversationId: Swift.String? {
+    get
+  }
+  public var dateEpoch: Swift.Int? {
+    get
+  }
+  public var isSecret: Swift.Bool? {
+    get
+  }
+  public var secretChatroomParticipants: [Swift.Int]? {
+    get
+  }
+  public var secretChatroomLeft: Swift.Bool? {
+    get
+  }
+  public var reactions: [LikeMindsChat.Reaction]? {
+    get
+  }
+  public var topicId: Swift.String? {
+    get
+  }
+  public var topic: LikeMindsChat.Conversation? {
+    get
+  }
+  public var autoFollowDone: Swift.Bool? {
+    get
+  }
+  public var isEdited: Swift.Bool? {
+    get
+  }
+  public var access: Swift.Int? {
+    get
+  }
+  public var memberCanMessage: Swift.Bool? {
+    get
+  }
+  public var cohorts: [LikeMindsChat.Cohort]? {
+    get
+  }
+  public var externalSeen: Swift.Bool? {
+    get
+  }
+  public var unreadConversationCount: Swift.Int? {
+    get
+  }
+  public var chatroomImageUrl: Swift.String? {
+    get
+  }
+  public var accessWithoutSubscription: Swift.Bool? {
+    get
+  }
+  public var lastConversation: LikeMindsChat.Conversation? {
+    get
+  }
+  public var lastSeenConversation: LikeMindsChat.Conversation? {
+    get
+  }
+  public var draftConversation: Swift.String? {
+    get
+  }
+  public var isConversationStored: Swift.Bool {
+    get
+  }
+  public var isDraft: Swift.Bool? {
+    get
+  }
+  public var totalAllResponseCount: Swift.Int? {
+    get
+  }
+  public static func builder() -> LikeMindsChat.Chatroom.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func member(_ member: LikeMindsChat.Member?) -> LikeMindsChat.Chatroom.Builder
+    public func id(_ id: Swift.String) -> LikeMindsChat.Chatroom.Builder
+    public func title(_ title: Swift.String) -> LikeMindsChat.Chatroom.Builder
+    public func createdAt(_ createdAt: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func answerText(_ answerText: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func state(_ state: Swift.Int) -> LikeMindsChat.Chatroom.Builder
+    public func unseenCount(_ unseenCount: Swift.Int?) -> LikeMindsChat.Chatroom.Builder
+    public func shareUrl(_ shareUrl: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func communityId(_ communityId: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func communityName(_ communityName: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func type(_ type: Swift.Int?) -> LikeMindsChat.Chatroom.Builder
+    public func about(_ about: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func header(_ header: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func showFollowTelescope(_ showFollowTelescope: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func showFollowAutoTag(_ showFollowAutoTag: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func cardCreationTime(_ cardCreationTime: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func participantsCount(_ participantsCount: Swift.Int?) -> LikeMindsChat.Chatroom.Builder
+    public func totalResponseCount(_ totalResponseCount: Swift.Int) -> LikeMindsChat.Chatroom.Builder
+    public func muteStatus(_ muteStatus: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func followStatus(_ followStatus: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func hasBeenNamed(_ hasBeenNamed: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func hasReactions(_ hasReactions: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func date(_ date: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func isTagged(_ isTagged: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func isPending(_ isPending: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func isPinned(_ isPinned: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func isDeleted(_ isDeleted: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func userId(_ userId: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func deletedBy(_ deletedBy: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func deletedByMember(_ deletedByMember: LikeMindsChat.Member?) -> LikeMindsChat.Chatroom.Builder
+    public func updatedAt(_ updatedAt: Swift.Int?) -> LikeMindsChat.Chatroom.Builder
+    public func lastSeenConversationId(_ lastSeenConversationId: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func lastConversationId(_ lastConversationId: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func dateEpoch(_ dateEpoch: Swift.Int?) -> LikeMindsChat.Chatroom.Builder
+    public func isSecret(_ isSecret: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func secretChatroomParticipants(_ secretChatroomParticipants: [Swift.Int]?) -> LikeMindsChat.Chatroom.Builder
+    public func secretChatroomLeft(_ secretChatroomLeft: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func reactions(_ reactions: [LikeMindsChat.Reaction]?) -> LikeMindsChat.Chatroom.Builder
+    public func topicId(_ topicId: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func topic(_ topic: LikeMindsChat.Conversation?) -> LikeMindsChat.Chatroom.Builder
+    public func autoFollowDone(_ autoFollowDone: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func isEdited(_ isEdited: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func access(_ access: Swift.Int?) -> LikeMindsChat.Chatroom.Builder
+    public func memberCanMessage(_ memberCanMessage: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func cohorts(_ cohorts: [LikeMindsChat.Cohort]?) -> LikeMindsChat.Chatroom.Builder
+    public func externalSeen(_ externalSeen: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func unreadConversationCount(_ unreadConversationCount: Swift.Int?) -> LikeMindsChat.Chatroom.Builder
+    public func chatroomImageUrl(_ chatroomImageUrl: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func accessWithoutSubscription(_ accessWithoutSubscription: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func lastConversation(_ lastConversation: LikeMindsChat.Conversation?) -> LikeMindsChat.Chatroom.Builder
+    public func lastSeenConversation(_ lastSeenConversation: LikeMindsChat.Conversation?) -> LikeMindsChat.Chatroom.Builder
+    public func draftConversation(_ draftConversation: Swift.String?) -> LikeMindsChat.Chatroom.Builder
+    public func isConversationStored(_ isConversationStored: Swift.Bool) -> LikeMindsChat.Chatroom.Builder
+    public func isDraft(_ isDraft: Swift.Bool?) -> LikeMindsChat.Chatroom.Builder
+    public func totalAllResponseCount(_ totalAllResponseCount: Swift.Int?) -> LikeMindsChat.Chatroom.Builder
+    public func build() -> LikeMindsChat.Chatroom
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.Chatroom.Builder
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public protocol LMCallback : AnyObject {
+  func login()
+}
+extension LikeMindsChat.LMCallback {
+  public func login()
+}
+@_hasMissingDesignatedInitializers final public class TokenManager {
+  public static var shared: LikeMindsChat.TokenManager {
+    get
+  }
+  final public func lmCallback(_ lmCallback: any LikeMindsChat.LMCallback) -> LikeMindsChat.TokenManager
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UpdateLastSeenAndDraftRequest {
+  public static func builder() -> LikeMindsChat.UpdateLastSeenAndDraftRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.UpdateLastSeenAndDraftRequest.Builder
+    public func draft(_ draft: Swift.String?) -> LikeMindsChat.UpdateLastSeenAndDraftRequest.Builder
+    public func build() -> LikeMindsChat.UpdateLastSeenAndDraftRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.UpdateLastSeenAndDraftRequest.Builder
+  @objc deinit
+}
+public struct GetConversationsResponse : Swift.Decodable {
+  public var conversations: [LikeMindsChat.Conversation]?
+  public var count: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Attachment : Swift.Decodable {
+  public let id: Swift.String?
+  public let name: Swift.String?
+  public let url: Swift.String?
+  public let type: Swift.String?
+  public let index: Swift.Int?
+  public let width: Swift.Int?
+  public let height: Swift.Int?
+  public let awsFolderPath: Swift.String?
+  public let localFilePath: Swift.String?
+  public let thumbnailUrl: Swift.String?
+  public let thumbnailAWSFolderPath: Swift.String?
+  public let thumbnailLocalFilePath: Swift.String?
+  public let meta: LikeMindsChat.AttachmentMeta?
+  public let createdAt: Swift.Int?
+  public let updatedAt: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+  public static func builder() -> LikeMindsChat.Attachment.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func id(_ id: Swift.String?) -> LikeMindsChat.Attachment.Builder
+    public func name(_ name: Swift.String?) -> LikeMindsChat.Attachment.Builder
+    public func url(_ url: Swift.String) -> LikeMindsChat.Attachment.Builder
+    public func type(_ type: Swift.String) -> LikeMindsChat.Attachment.Builder
+    public func index(_ index: Swift.Int?) -> LikeMindsChat.Attachment.Builder
+    public func width(_ width: Swift.Int?) -> LikeMindsChat.Attachment.Builder
+    public func height(_ height: Swift.Int?) -> LikeMindsChat.Attachment.Builder
+    public func awsFolderPath(_ awsFolderPath: Swift.String?) -> LikeMindsChat.Attachment.Builder
+    public func localFilePath(_ localFilePath: Swift.String?) -> LikeMindsChat.Attachment.Builder
+    public func thumbnailUrl(_ thumbnailUrl: Swift.String?) -> LikeMindsChat.Attachment.Builder
+    public func thumbnailAWSFolderPath(_ thumbnailAWSFolderPath: Swift.String?) -> LikeMindsChat.Attachment.Builder
+    public func thumbnailLocalFilePath(_ thumbnailLocalFilePath: Swift.String?) -> LikeMindsChat.Attachment.Builder
+    public func meta(_ meta: LikeMindsChat.AttachmentMeta?) -> LikeMindsChat.Attachment.Builder
+    public func createdAt(_ createdAt: Swift.Int?) -> LikeMindsChat.Attachment.Builder
+    public func updatedAt(_ updatedAt: Swift.Int?) -> LikeMindsChat.Attachment.Builder
+    public func build() -> LikeMindsChat.Attachment
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.Attachment.Builder
+}
+public protocol RealmObjectChangeObserver : AnyObject {
+}
+public protocol HomeFeedClientObserver : LikeMindsChat.RealmObjectChangeObserver {
+  func initial(_ chatrooms: [LikeMindsChat.Chatroom])
+  func onChange(removed: [LikeMindsChat.Chatroom], inserted: [(Swift.Int, LikeMindsChat.Chatroom)], updated: [(Swift.Int, LikeMindsChat.Chatroom)])
+}
+public struct GetChatroomResponse : Swift.Decodable {
+  public var chatroom: LikeMindsChat.Chatroom?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class FollowChatroomRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.FollowChatroomRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.FollowChatroomRequest.Builder
+    public func uuid(_ uuid: Swift.String) -> LikeMindsChat.FollowChatroomRequest.Builder
+    public func value(_ value: Swift.Bool) -> LikeMindsChat.FollowChatroomRequest.Builder
+    public func build() -> LikeMindsChat.FollowChatroomRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.FollowChatroomRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct GetContentDownloadSettingsResponse : Swift.Decodable {
+  public var settings: [LikeMindsChat.ContentDownloadSetting]?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class EditChatroomTitleRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.EditChatroomTitleRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(chatroomId: Swift.String) -> LikeMindsChat.EditChatroomTitleRequest.Builder
+    public func text(text: Swift.String) -> LikeMindsChat.EditChatroomTitleRequest.Builder
+    public func build() -> LikeMindsChat.EditChatroomTitleRequest
+    @objc deinit
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public typealias LMClientResponse<T> = (LikeMindsChat.LMResponse<T>) -> (Swift.Void) where T : Swift.Decodable
+public struct LMResponse<T> : Swift.Decodable where T : Swift.Decodable {
+  public let success: Swift.Bool
+  public let errorMessage: Swift.String?
+  public let data: T?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NoData : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class BasePreferences {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SDKPreferences : LikeMindsChat.BasePreferences {
+  public static let shared: LikeMindsChat.SDKPreferences
+  public func getCommunityId() -> Swift.String?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UserPreferences : LikeMindsChat.BasePreferences {
+  public static let shared: LikeMindsChat.UserPreferences
+  public func getLMMemberId() -> Swift.String?
+  public func getClientUUID() -> Swift.String?
+  public func getLMUUID() -> Swift.String?
+  @objc deinit
+}
+public struct RegisterDeviceResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension Foundation.NSNotification.Name {
+  public static let conversationSyncCompleted: Foundation.Notification.Name
+}
+public struct InitiateUserResponse : Swift.Decodable {
+  public let accessToken: Swift.String
+  public let appAccess: Swift.Bool?
+  public let community: LikeMindsChat.Community?
+  public let hasAnswers: Swift.Bool?
+  public let refreshToken: Swift.String?
+  public let user: LikeMindsChat.User?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InitialUser : Swift.Decodable {
+  public let user: LikeMindsChat.User
+  public let community: LikeMindsChat.Community
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SDKClientInfo : Swift.Codable {
+  public let community: Swift.Int?, user: Swift.Int?
+  public let userUniqueID: Swift.String?, uuid: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MemberAction : Swift.Decodable {
+  public var title: Swift.String?
+  public var route: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class SetChatroomTopicRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.SetChatroomTopicRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.SetChatroomTopicRequest.Builder
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.SetChatroomTopicRequest.Builder
+    public func build() -> LikeMindsChat.SetChatroomTopicRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.SetChatroomTopicRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum RealmDatabaseAction {
+  case add
+  case insert
+  case update
+  case remove
+  public static func == (a: LikeMindsChat.RealmDatabaseAction, b: LikeMindsChat.RealmDatabaseAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PutMultimediaResponse : Swift.Decodable {
+  public var conversation: LikeMindsChat.Conversation?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class EditConversationRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.EditConversationRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.EditConversationRequest.Builder
+    public func text(_ text: Swift.String) -> LikeMindsChat.EditConversationRequest.Builder
+    public func shareLink(_ shareLink: Swift.String?) -> LikeMindsChat.EditConversationRequest.Builder
+    public func build() -> LikeMindsChat.EditConversationRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.EditConversationRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class LogoutRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.LogoutRequest
+  public func build() -> LikeMindsChat.LogoutRequest
+  public func refreshToken(_ refreshToken: Swift.String) -> LikeMindsChat.LogoutRequest
+  public func deviceId(_ deviceId: Swift.String) -> LikeMindsChat.LogoutRequest
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct GetHomeFeedResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class LMLogger {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PutMultimediaRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.PutMultimediaRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func name(_ name: Swift.String) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func url(_ url: Swift.String) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func thumbnailUrl(_ thumbnailUrl: Swift.String?) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func type(_ type: Swift.String) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func filesCount(_ filesCount: Swift.Int?) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func index(_ index: Swift.Int?) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func width(_ width: Swift.Int?) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func height(_ height: Swift.Int?) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func meta(_ meta: LikeMindsChat.AttachmentMeta?) -> LikeMindsChat.PutMultimediaRequest.Builder
+    public func build() -> LikeMindsChat.PutMultimediaRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.PutMultimediaRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class Reaction : Swift.Decodable {
+  final public let member: LikeMindsChat.Member?
+  final public let reaction: Swift.String
+  required public init(from decoder: any Swift.Decoder) throws
+  public static func builder() -> LikeMindsChat.Reaction.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func member(_ member: LikeMindsChat.Member?) -> LikeMindsChat.Reaction.Builder
+    public func reaction(_ reaction: Swift.String) -> LikeMindsChat.Reaction.Builder
+    public func build() -> LikeMindsChat.Reaction
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.Reaction.Builder
+  @objc deinit
+}
+public struct _Chatroom_ : Swift.Decodable {
+  public let member: LikeMindsChat.Member?
+  public let id: Swift.String?
+  public let title: Swift.String?
+  public let createdAt: Swift.String?
+  public let answerText: Swift.String?
+  public let state: Swift.Int?
+  public let unseenCount: Swift.Int?
+  public let shareUrl: Swift.String?
+  public let communityId: Swift.String?
+  public let communityName: Swift.String?
+  public let type: Swift.Int?
+  public let about: Swift.String?
+  public let header: Swift.String?
+  public let showFollowTelescope: Swift.Bool?
+  public let showFollowAutoTag: Swift.Bool?
+  public let cardCreationTime: Swift.String?
+  public let participantsCount: Swift.Int?
+  public let totalResponseCount: Swift.Int?
+  public let muteStatus: Swift.Bool?
+  public let followStatus: Swift.Bool?
+  public let hasBeenNamed: Swift.Bool?
+  public let hasReactions: Swift.Bool?
+  public let date: Swift.String?
+  public let isTagged: Swift.Bool?
+  public let isPending: Swift.Bool?
+  public let isPinned: Swift.Bool?
+  public let isDeleted: Swift.Bool?
+  public let userId: Swift.String?
+  public let deletedBy: Swift.String?
+  public let deletedByMember: LikeMindsChat.Member?
+  public let updatedAt: Swift.Int?
+  public let lastSeenConversationId: Swift.String?
+  public let lastConversationId: Swift.String?
+  public let dateEpoch: Swift.Int?
+  public let isSecret: Swift.Bool?
+  public let secretChatroomParticipants: [Swift.Int]?
+  public let secretChatroomLeft: Swift.Bool?
+  public let reactions: [LikeMindsChat.Reaction]?
+  public let topicId: Swift.String?
+  public let autoFollowDone: Swift.Bool?
+  public let isEdited: Swift.Bool?
+  public let access: Swift.Int?
+  public let memberCanMessage: Swift.Bool?
+  public let cohorts: [LikeMindsChat.Cohort]?
+  public let externalSeen: Swift.Bool?
+  public let unreadConversationCount: Swift.Int?
+  public let chatroomImageUrl: Swift.String?
+  public let accessWithoutSubscription: Swift.Bool?
+}
+extension LikeMindsChat._Chatroom_ {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension Swift.KeyedDecodingContainer {
+  public func decodeIntToStringIfPresent(forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> Swift.String?
+  public func decodeStringToIntIfPresent(forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> Swift.Int?
+}
+@_hasMissingDesignatedInitializers public class GetExploreFeedRequest {
+  public static func builder() -> LikeMindsChat.GetExploreFeedRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func orderType(_ orderType: Swift.Int) -> LikeMindsChat.GetExploreFeedRequest.Builder
+    public func isPinned(_ isPinned: Swift.Bool?) -> LikeMindsChat.GetExploreFeedRequest.Builder
+    public func page(_ page: Swift.Int) -> LikeMindsChat.GetExploreFeedRequest.Builder
+    public func build() -> LikeMindsChat.GetExploreFeedRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetExploreFeedRequest.Builder
+  @objc deinit
+}
+public struct GetConversationResponse : Swift.Decodable {
+  public var conversation: LikeMindsChat.Conversation?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum LoadConversationType : Swift.Int {
+  case firstTime, firstTimeBackground, reopen
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum GetConversationType : Swift.Int {
+  case none, below, above, top, bottom
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum GetConversationCountType : Swift.Int {
+  case none, below, above
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ObserveConversationsRequest {
+  public static func builder() -> LikeMindsChat.ObserveConversationsRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.ObserveConversationsRequest.Builder
+    public func listener(_ listener: any LikeMindsChat.ConversationChangeDelegate) -> LikeMindsChat.ObserveConversationsRequest.Builder
+    public func build() -> LikeMindsChat.ObserveConversationsRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.ObserveConversationsRequest.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GetConversationMetaRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.GetConversationMetaRequest
+  public func build() -> LikeMindsChat.GetConversationMetaRequest
+  public func chatroomId(_ chatroomId: Swift.Int) -> LikeMindsChat.GetConversationMetaRequest
+  public func conversationId(_ conversationId: Swift.Int) -> LikeMindsChat.GetConversationMetaRequest
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ConfigResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class GetConversationsRequest {
+  final public let chatroomId: Swift.String
+  final public let type: LikeMindsChat.GetConversationType
+  final public let conversation: LikeMindsChat.Conversation?
+  final public let limit: Swift.Int
+  final public let observer: (any LikeMindsChat.ConversationClientObserver)?
+  public static func builder() -> LikeMindsChat.GetConversationsRequest.Builder
+  public class Builder {
+    public init()
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.GetConversationsRequest.Builder
+    public func type(_ type: LikeMindsChat.GetConversationType) -> LikeMindsChat.GetConversationsRequest.Builder
+    public func conversation(_ conversation: LikeMindsChat.Conversation?) -> LikeMindsChat.GetConversationsRequest.Builder
+    public func limit(_ limit: Swift.Int) -> LikeMindsChat.GetConversationsRequest.Builder
+    public func observer(_ observer: (any LikeMindsChat.ConversationClientObserver)?) -> LikeMindsChat.GetConversationsRequest.Builder
+    public func build() -> LikeMindsChat.GetConversationsRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetConversationsRequest.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LMChatClient {
+  public static var shared: LikeMindsChat.LMChatClient {
+    get
+  }
+  public static func builder() -> LikeMindsChat.LMChatClient
+  public func lmCallback(_ lmCallback: (any LikeMindsChat.LMCallback)?) -> LikeMindsChat.LMChatClient
+  public func build() -> LikeMindsChat.LMChatClient
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GetConversationsCountRequest {
+  public static func builder() -> LikeMindsChat.GetConversationsCountRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.GetConversationsCountRequest.Builder
+    public func type(_ type: LikeMindsChat.GetConversationCountType) -> LikeMindsChat.GetConversationsCountRequest.Builder
+    public func conversation(_ conversation: LikeMindsChat.Conversation) -> LikeMindsChat.GetConversationsCountRequest.Builder
+    public func build() -> LikeMindsChat.GetConversationsCountRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetConversationsCountRequest.Builder
+  @objc deinit
+}
+public struct GetMemberResponse : Swift.Decodable {
+  public var member: LikeMindsChat.Member?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ServiceAPI {
+  public static let bucketURL: Swift.String
+  public static let awsPoolIdCognito: Swift.String
+  public static let secretAccessKey: Swift.String
+  public static let accessKey: Swift.String
+}
+public struct GetReportTagsResponse : Swift.Decodable {
+  public let tags: [LikeMindsChat.ReportTag]?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReportTag : Swift.Decodable {
+  public let id: Swift.Int?
+  public let name: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ConversationState : Swift.Int, Swift.Codable {
+  case unknown
+  case normal
+  case chatRoomHeader
+  case chatRoomFollowed
+  case chatRoomUnFollowed
+  case chatRoomCreater
+  case chatRoomEdited
+  case chatRoomJoined
+  case chatRoomAddParticipants
+  case chatRoomLeaveSeperator
+  case chatRoomRemoveSeperator
+  case microPoll
+  case addAllMembers
+  case chatRoomCurrentTopic
+  case directMessageMemberRemovedOrLeft
+  case directMessageCMRemoved
+  case directMessageMemberBecomesCMDisableChat
+  case directMessageCMBecomesMemberEnableChat
+  case directMessageMemberBecomesCMEnableChat
+  case directMessageMemberRequestRejected
+  case directMessageMemberRequestApproved
+  case chatroomDataHeader
+  public static func isPoll(stateValue: Swift.Int) -> Swift.Bool
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LikeMindsChat.ConversationState]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LikeMindsChat.ConversationState] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct Cohort : Swift.Decodable {
+  public let id: Swift.Int?
+  public let totalMembers: Swift.Int?
+  public let name: Swift.String?
+  public let members: [LikeMindsChat.Member]?
+}
+extension LikeMindsChat.Cohort {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GetTaggingListResponse : Swift.Decodable {
+  public let groupTags: [LikeMindsChat.GroupTag]?
+  public let chatroomParticipants: [LikeMindsChat.Member]?
+  public let communityMembers: [LikeMindsChat.Member]?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GroupTag : Swift.Decodable {
+  public let description: Swift.String?
+  public let name: Swift.String?
+  public let route: Swift.String?
+  public let tag: Swift.String?
+  public let imageUrl: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class GetChatroomRequest : Swift.Encodable {
+  final public let chatroomId: Swift.String
+  public class Builder {
+    public init()
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.GetChatroomRequest.Builder
+    public func build() -> LikeMindsChat.GetChatroomRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetChatroomRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum BuildEnvironment {
+  case production
+  case devtest
+  public static func == (a: LikeMindsChat.BuildEnvironment, b: LikeMindsChat.BuildEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class BuildManager {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UpdateConversationRequest {
+  public static func builder() -> LikeMindsChat.UpdateConversationRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversation(_ conversation: LikeMindsChat.Conversation?) -> LikeMindsChat.UpdateConversationRequest.Builder
+    public func build() -> LikeMindsChat.UpdateConversationRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.UpdateConversationRequest.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NetworkMonitor {
+  public static let shared: LikeMindsChat.NetworkMonitor
+  public func startMonitoring()
+  public func stopMonitoring()
+  @objc deinit
+}
+public struct Member : Swift.Decodable {
+  public var id: Swift.String? {
+    get
+  }
+  public var userUniqueId: Swift.String? {
+    get
+  }
+  public var name: Swift.String? {
+    get
+  }
+  public var imageUrl: Swift.String? {
+    get
+  }
+  public var questionAnswers: [LikeMindsChat.Question]? {
+    get
+  }
+  public var state: Swift.Int? {
+    get
+  }
+  public var isGuest: Swift.Bool {
+    get
+  }
+  public var customIntroText: Swift.String? {
+    get
+  }
+  public var customClickText: Swift.String? {
+    get
+  }
+  public var memberSince: Swift.String? {
+    get
+  }
+  public var communityName: Swift.String? {
+    get
+  }
+  public var isOwner: Swift.Bool {
+    get
+  }
+  public var isDeleted: Swift.Bool? {
+    get
+  }
+  public var customTitle: Swift.String? {
+    get
+  }
+  public var menu: [LikeMindsChat.MemberAction]? {
+    get
+  }
+  public var communityId: Swift.String? {
+    get
+  }
+  public var chatroomId: Swift.String? {
+    get
+  }
+  public var route: Swift.String? {
+    get
+  }
+  public var attendingStatus: Swift.Bool? {
+    get
+  }
+  public var hasProfileImage: Swift.Bool? {
+    get
+  }
+  public var updatedAt: Swift.Int? {
+    get
+  }
+  public var sdkClientInfo: LikeMindsChat.SDKClientInfo? {
+    get
+  }
+  public var uuid: Swift.String? {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public func communityManager() -> Swift.String?
+}
+public class PostConversationResponse : Swift.Decodable {
+  public var conversation: LikeMindsChat.Conversation?
+  public var id: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SavePostedConversationRequest {
+  public static func builder() -> LikeMindsChat.SavePostedConversationRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversation(_ conversation: LikeMindsChat.Conversation) -> LikeMindsChat.SavePostedConversationRequest.Builder
+    public func isFromNotification(_ isFromNotification: Swift.Bool) -> LikeMindsChat.SavePostedConversationRequest.Builder
+    public func build() -> LikeMindsChat.SavePostedConversationRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.SavePostedConversationRequest.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PostReportRequest : Swift.Encodable {
+  public static func builder(tagId: Swift.Int) -> LikeMindsChat.PostReportRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func reason(_ reason: Swift.String?) -> LikeMindsChat.PostReportRequest.Builder
+    public func uuid(_ uuid: Swift.String?) -> LikeMindsChat.PostReportRequest.Builder
+    public func reportedConversationId(_ reportedConversationId: Swift.String?) -> LikeMindsChat.PostReportRequest.Builder
+    public func reportedChatroomId(_ reportedChatroomId: Swift.String?) -> LikeMindsChat.PostReportRequest.Builder
+    public func reportedLink(_ reportedLink: Swift.String?) -> LikeMindsChat.PostReportRequest.Builder
+    public func build() -> LikeMindsChat.PostReportRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.PostReportRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum ReportEntityType : Swift.String {
+  case chatroom
+  case message
+  case member
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ChatroomSyncRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.ChatroomSyncRequest
+  public func build() -> LikeMindsChat.ChatroomSyncRequest
+  public func page(_ page: Swift.Int) -> LikeMindsChat.ChatroomSyncRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsChat.ChatroomSyncRequest
+  public func maxTimestamp(_ maxTimestamp: Swift.Int) -> LikeMindsChat.ChatroomSyncRequest
+  public func minTimestamp(_ minTimestamp: Swift.Int) -> LikeMindsChat.ChatroomSyncRequest
+  public func chatroomTypes(_ chatroomTypes: [Swift.Int]) -> LikeMindsChat.ChatroomSyncRequest
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum MemberState : Swift.Int, Swift.Codable {
+  case admin
+  case member
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GetMemberStateResponse : Swift.Codable {
+  public let createdAt: Swift.String?
+  public let editRequired: Swift.Bool?
+  public let member: LikeMindsChat.User?
+  public let managerRights: [LikeMindsChat.ManagerRight]?
+  public let memberRights: [LikeMindsChat.MemberRight]?
+  public let state: Swift.Int?
+  public let toolState: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ContentDownloadSetting : Swift.Decodable {
+  public var communityId: Swift.Int
+  public var downloadSettingType: Swift.String
+  public var downloadSettingTitle: Swift.String
+  public var enabled: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class DecodeUrlRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.DecodeUrlRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func url(_ url: Swift.String) -> LikeMindsChat.DecodeUrlRequest.Builder
+    public func build() -> LikeMindsChat.DecodeUrlRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.DecodeUrlRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension LikeMindsChat.LMChatClient {
+  public func initiateUser(request: LikeMindsChat.InitiateUserRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.InitiateUserResponse>?)
+  public func registerDevice(request: LikeMindsChat.RegisterDeviceRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.RegisterDeviceResponse>?)
+  public func logout(request: LikeMindsChat.LogoutRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func getConfig(response: LikeMindsChat.LMClientResponse<LikeMindsChat.ConfigResponse>?)
+  public func getExploreTabCount(response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetExploreTabCountResponse>?)
+  public func getExploreFeed(request: LikeMindsChat.GetExploreFeedRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetExploreFeedResponse>?)
+  public func syncChatrooms()
+  public func getChatrooms(withObserver observer: any LikeMindsChat.HomeFeedClientObserver)
+  public func getParticipants(request: LikeMindsChat.GetParticipantsRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetParticipantsResponse>?)
+  public func getReportTags(request: LikeMindsChat.GetReportTagsRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetReportTagsResponse>?)
+  public func postReport(request: LikeMindsChat.PostReportRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func getContentDownloadSettings(_ response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetContentDownloadSettingsResponse>?)
+  public func loadConversations(withChatroomId chatroomId: Swift.String, loadType: LikeMindsChat.LoadConversationType)
+  public func loadLatestConversations(withConversationId conversationId: Swift.String, chatroomId: Swift.String)
+  public func getConversations(withRequest request: LikeMindsChat.GetConversationsRequest) -> LikeMindsChat.LMResponse<LikeMindsChat.GetConversationsResponse>?
+  public func saveTemporaryConversation(request: LikeMindsChat.SaveConversationRequest)
+  public func observeConversations(request: LikeMindsChat.ObserveConversationsRequest)
+  public func addObserverConversation(_ ob: any LikeMindsChat.ConversationChangeDelegate)
+  public func removeObserverConversation(_ ob: any LikeMindsChat.ConversationChangeDelegate)
+  public func getHomeFeed(request: LikeMindsChat.GetHomeFeedRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetHomeFeedResponse>?)
+  public func getLoggedInUser() -> LikeMindsChat.User?
+  public func getMember(request: LikeMindsChat.GetMemberRequest) -> LikeMindsChat.LMResponse<LikeMindsChat.GetMemberResponse>?
+  public func getCurrentMember() -> LikeMindsChat.LMResponse<LikeMindsChat.GetMemberResponse>?
+  public func getMemberState(response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetMemberStateResponse>?)
+  public func getChatroom(request: LikeMindsChat.GetChatroomRequest) -> LikeMindsChat.LMResponse<LikeMindsChat.GetChatroomResponse>?
+  public func getChatroomActions(request: LikeMindsChat.GetChatroomActionsRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetChatroomActionsResponse>?)
+  public func followChatroom(request: LikeMindsChat.FollowChatroomRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func leaveSecretChatroom(request: LikeMindsChat.LeaveSecretChatroomRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func muteChatroom(request: LikeMindsChat.MuteChatroomRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func markReadChatroom(request: LikeMindsChat.MarkReadChatroomRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func setChatroomTopic(request: LikeMindsChat.SetChatroomTopicRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func addPollOption()
+  public func submitPoll()
+  public func getPollUsers()
+  public func postPollConversation()
+  public func decodeUrl(request: LikeMindsChat.DecodeUrlRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.DecodeUrlResponse>?)
+  public func getTaggingList(request: LikeMindsChat.GetTaggingListRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetTaggingListResponse>?)
+  public func getDBEmpty()
+  public func searchChatroom(request: LikeMindsChat.SearchChatroomRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.SearchChatroomResponse>?)
+  public func searchConversation(request: LikeMindsChat.SearchConversationRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.SearchConversationResponse>?)
+  public func getConversationsCount()
+  public func deleteConversationPermanatly()
+  public func updateConversationUploadingStatus(withId conversationId: Swift.String, withStatus status: LikeMindsChat.ConversationStatus)
+  public func updateTemporaryConversation()
+  public func getConversation(request: LikeMindsChat.GetConversationRequest) -> LikeMindsChat.LMResponse<LikeMindsChat.GetConversationResponse>?
+  public func postConversation(request: LikeMindsChat.PostConversationRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.PostConversationResponse>?)
+  public func editConversation(request: LikeMindsChat.EditConversationRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.EditConversationResponse>?)
+  public func deleteConversations(request: LikeMindsChat.DeleteConversationsRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.DeleteConversationsResponse>?)
+  public func deleteTempConversations(conversationId: Swift.String)
+  public func putReaction(request: LikeMindsChat.PutReactionRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func deleteReaction(request: LikeMindsChat.DeleteReactionRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func getUnreadConversationNotification()
+  public func putMultimedia(request: LikeMindsChat.PutMultimediaRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.PutMultimediaResponse>?)
+  public func updateLastSeenAndDraft()
+  public func editChatroomTitle()
+  public func savePostedConversation(request: LikeMindsChat.SavePostedConversationRequest)
+  public func observeLiveConversation(withChatroomId chatroomId: Swift.String)
+  public func observeLiveHomeFeed(withCommunityId communityId: Swift.String)
+}
+public protocol ConversationClientObserver : LikeMindsChat.RealmObjectChangeObserver {
+  func initial(_ conversations: [LikeMindsChat.Conversation])
+  func onChange(removed: [Swift.Int], inserted: [(Swift.Int, LikeMindsChat.Conversation)], updated: [(Swift.Int, LikeMindsChat.Conversation)])
+}
+public enum MemberRightState : Swift.Int, Swift.Codable {
+  case unknown
+  case createChatRooms
+  case createPolls
+  case createEvents
+  case respondsInChatRoom
+  case inviteMemberFromPrivateLink
+  case autoApproveCreatedChatroom
+  case createSecretChatRoom
+  case directMessage
+  case noClearYet
+  case createPost
+  case commentOrReplyOnPost
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LikeMindsChat.MemberRightState]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LikeMindsChat.MemberRightState] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ManagerRightState : Swift.Int, Swift.Codable {
+  case unknown
+  case moderateChatRooms
+  case moderateMembers
+  case editCommunityDetails
+  case viewMemberContactInfo
+  case addCommunityManager
+  case moderateDMSetting
+  case moderateFeedAndComment
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LikeMindsChat.ManagerRightState]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LikeMindsChat.ManagerRightState] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct MemberRight : Swift.Codable {
+  public let id: Swift.Int?
+  public let isLocked: Swift.Bool?, isSelected: Swift.Bool?
+  public let state: LikeMindsChat.MemberRightState?
+  public let title: Swift.String?
+  public let subTitle: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ManagerRight : Swift.Codable {
+  public let id: Swift.Int?
+  public let isLocked: Swift.Bool?, isSelected: Swift.Bool?
+  public let state: LikeMindsChat.ManagerRightState?
+  public let title: Swift.String?
+  public let subTitle: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class InitiateUserRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.InitiateUserRequest
+  public func apiKey(_ apiKey: Swift.String) -> LikeMindsChat.InitiateUserRequest
+  public func isGuest(_ isGuest: Swift.Bool) -> LikeMindsChat.InitiateUserRequest
+  public func userName(_ userName: Swift.String) -> LikeMindsChat.InitiateUserRequest
+  public func uuid(_ uuid: Swift.String) -> LikeMindsChat.InitiateUserRequest
+  public func deviceId(_ deviceId: Swift.String) -> LikeMindsChat.InitiateUserRequest
+  public func build() -> LikeMindsChat.InitiateUserRequest
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class PostConversationRequest : Swift.Encodable {
+  public var chatroomId: Swift.String {
+    get
+  }
+  public var text: Swift.String {
+    get
+  }
+  public var isFromNotification: Swift.Bool {
+    get
+  }
+  public var shareLink: Swift.String? {
+    get
+  }
+  public var ogTags: LikeMindsChat.LinkOGTags? {
+    get
+  }
+  public var repliedConversationId: Swift.String? {
+    get
+  }
+  public var attachmentCount: Swift.Int? {
+    get
+  }
+  public var temporaryId: Swift.String? {
+    get
+  }
+  public var repliedChatroomId: Swift.String? {
+    get
+  }
+  public class Builder {
+    public init()
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.PostConversationRequest.Builder
+    public func text(_ text: Swift.String) -> LikeMindsChat.PostConversationRequest.Builder
+    public func isFromNotification(_ isFromNotification: Swift.Bool) -> LikeMindsChat.PostConversationRequest.Builder
+    public func shareLink(_ shareLink: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func ogTags(_ ogTags: LikeMindsChat.LinkOGTags?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func repliedConversationId(_ repliedConversationId: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func attachmentCount(_ attachmentCount: Swift.Int?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func temporaryId(_ temporaryId: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func repliedChatroomId(_ repliedChatroomId: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func build() -> LikeMindsChat.PostConversationRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.PostConversationRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public protocol ConversationChangeDelegate : AnyObject {
+  func getPostedConversations(conversations: [LikeMindsChat.Conversation]?)
+  func getChangedConversations(conversations: [LikeMindsChat.Conversation]?)
+  func getNewConversations(conversations: [LikeMindsChat.Conversation]?)
+}
+@_hasMissingDesignatedInitializers public class MarkReadChatroomRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.MarkReadChatroomRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.MarkReadChatroomRequest.Builder
+    public func build() -> LikeMindsChat.MarkReadChatroomRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.MarkReadChatroomRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class UpdateTemporaryConversationRequest {
+  public static func builder() -> LikeMindsChat.UpdateTemporaryConversationRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.UpdateTemporaryConversationRequest.Builder
+    public func localSavedEpoch(_ localSavedEpoch: Swift.Int64) -> LikeMindsChat.UpdateTemporaryConversationRequest.Builder
+    public func build() -> LikeMindsChat.UpdateTemporaryConversationRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.UpdateTemporaryConversationRequest.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DeleteConversationsRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.DeleteConversationsRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationIds(_ conversationIds: [Swift.String]) -> LikeMindsChat.DeleteConversationsRequest.Builder
+    public func build() -> LikeMindsChat.DeleteConversationsRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.DeleteConversationsRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct DecodeUrlResponse : Swift.Decodable {
+  public let ogTags: LikeMindsChat.LinkOGTags
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class DeleteConversationPermanentlyRequest {
+  public static func builder() -> LikeMindsChat.DeleteConversationPermanentlyRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.DeleteConversationPermanentlyRequest.Builder
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.DeleteConversationPermanentlyRequest.Builder
+    public func build() -> LikeMindsChat.DeleteConversationPermanentlyRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.DeleteConversationPermanentlyRequest.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MuteChatroomRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.MuteChatroomRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.MuteChatroomRequest.Builder
+    public func value(_ value: Swift.Bool) -> LikeMindsChat.MuteChatroomRequest.Builder
+    public func build() -> LikeMindsChat.MuteChatroomRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.MuteChatroomRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct LinkOGTags : Swift.Codable {
+  public var title: Swift.String?
+  public var image: Swift.String?
+  public var description: Swift.String?
+  public var url: Swift.String?
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func title(_ title: Swift.String?) -> LikeMindsChat.LinkOGTags.Builder
+    public func image(_ image: Swift.String?) -> LikeMindsChat.LinkOGTags.Builder
+    public func description(_ description: Swift.String?) -> LikeMindsChat.LinkOGTags.Builder
+    public func url(_ url: Swift.String?) -> LikeMindsChat.LinkOGTags.Builder
+    public func build() -> LikeMindsChat.LinkOGTags
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.LinkOGTags.Builder
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class GetReportTagsRequest {
+  public static func builder() -> LikeMindsChat.GetReportTagsRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func type(_ type: Swift.Int) -> LikeMindsChat.GetReportTagsRequest.Builder
+    public func build() -> LikeMindsChat.GetReportTagsRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetReportTagsRequest.Builder
+  @objc deinit
+}
+public struct AttachmentMeta : Swift.Codable {
+  public let numberOfPage: Swift.Int?
+  public let size: Swift.Int?
+  public let duration: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+  public static func builder() -> LikeMindsChat.AttachmentMeta.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func numberOfPage(_ numberOfPage: Swift.Int?) -> LikeMindsChat.AttachmentMeta.Builder
+    public func size(_ size: Swift.Int?) -> LikeMindsChat.AttachmentMeta.Builder
+    public func duration(_ duration: Swift.Int?) -> LikeMindsChat.AttachmentMeta.Builder
+    public func build() -> LikeMindsChat.AttachmentMeta
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.AttachmentMeta.Builder
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class GetParticipantsRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.GetParticipantsRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func isChatroomSecret(_ isChatroomSecret: Swift.Bool) -> LikeMindsChat.GetParticipantsRequest.Builder
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.GetParticipantsRequest.Builder
+    public func participantName(_ participantName: Swift.String?) -> LikeMindsChat.GetParticipantsRequest.Builder
+    public func page(_ page: Swift.Int) -> LikeMindsChat.GetParticipantsRequest.Builder
+    public func pageSize(_ pageSize: Swift.Int) -> LikeMindsChat.GetParticipantsRequest.Builder
+    public func build() -> LikeMindsChat.GetParticipantsRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetParticipantsRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum ChatroomType : Swift.Int, Swift.Codable {
+  case unknown
+  case normal
+  case introduction
+  case event
+  case poll
+  case unverified
+  case publicEvent
+  case purpose
+  case introductions
+  case directMessage
+  case chatRoomDateSectionHeader
+  case newUnseenChatRoomTitle
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LikeMindsChat.ChatroomType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LikeMindsChat.ChatroomType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GetParticipantsResponse : Swift.Decodable {
+  public var canEditParticipant: Swift.Bool?
+  public var participants: [LikeMindsChat.Member]?
+  public var totalParticipantsCount: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class GetMemberRequest {
+  public static func builder() -> LikeMindsChat.GetMemberRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func uuid(_ uuid: Swift.String) -> LikeMindsChat.GetMemberRequest.Builder
+    public func build() -> LikeMindsChat.GetMemberRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetMemberRequest.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SaveConversationRequest {
+  @_hasMissingDesignatedInitializers public class Builder {
+    @discardableResult
+    public func conversation(_ conversation: LikeMindsChat.Conversation?) -> LikeMindsChat.SaveConversationRequest.Builder
+    public func build() -> LikeMindsChat.SaveConversationRequest
+    @objc deinit
+  }
+  public static func builder() -> LikeMindsChat.SaveConversationRequest.Builder
+  public func toBuilder() -> LikeMindsChat.SaveConversationRequest.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LeaveSecretChatroomRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.LeaveSecretChatroomRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.LeaveSecretChatroomRequest.Builder
+    public func uuid(_ uuid: Swift.String) -> LikeMindsChat.LeaveSecretChatroomRequest.Builder
+    public func isSecret(_ isSecret: Swift.Bool) -> LikeMindsChat.LeaveSecretChatroomRequest.Builder
+    public func build() -> LikeMindsChat.LeaveSecretChatroomRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.LeaveSecretChatroomRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct SearchConversationResponse : Swift.Decodable {
+  public let conversations: [LikeMindsChat.SearchConversation]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SearchConversation : Swift.Decodable {
+  public let answer: Swift.String
+  public let attachmentCount: Swift.Int
+  public let attachments: [LikeMindsChat.Attachment]
+  public let attachmentsUploaded: Swift.Bool
+  public let chatroom: LikeMindsChat._Chatroom_
+  public let community: LikeMindsChat.Community
+  public let createdAt: Foundation.TimeInterval
+  public let id: Swift.Int
+  public let isDeleted: Swift.Bool
+  public let isEdited: Swift.Bool
+  public let lastUpdated: Foundation.TimeInterval
+  public let member: LikeMindsChat.Member
+  public let state: Swift.Int
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class Poll : Swift.Codable {
+  final public let id: Swift.String?
+  final public let text: Swift.String?
+  final public let isSelected: Swift.Bool?
+  final public let percentage: Swift.Int?
+  final public let subText: Swift.String?
+  final public let noVotes: Swift.Int?
+  final public let userId: Swift.String?
+  final public let conversationId: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class Conversation : Swift.Decodable {
+  public var id: Swift.String? {
+    get
+  }
+  public var chatroomId: Swift.String? {
+    get
+  }
+  public var communityId: Swift.String? {
+    get
+  }
+  public var member: LikeMindsChat.Member? {
+    get
+  }
+  public var answer: Swift.String {
+    get
+  }
+  public var createdAt: Swift.String? {
+    get
+  }
+  public var state: LikeMindsChat.ConversationState {
+    get
+  }
+  public var attachments: [LikeMindsChat.Attachment]? {
+    get
+  }
+  public var lastSeen: Swift.Bool? {
+    get
+  }
+  public var ogTags: LikeMindsChat.LinkOGTags? {
+    get
+  }
+  public var date: Swift.String? {
+    get
+  }
+  public var isEdited: Swift.Bool? {
+    get
+  }
+  public var memberId: Swift.String? {
+    get
+  }
+  public var replyConversationId: Swift.String? {
+    get
+  }
+  public var deletedBy: Swift.String? {
+    get
+  }
+  public var createdEpoch: Swift.Int? {
+    get
+  }
+  public var attachmentCount: Swift.Int? {
+    get
+  }
+  public var attachmentUploaded: Swift.Bool? {
+    get
+  }
+  public var uploadWorkerUUID: Swift.String? {
+    get
+  }
+  public var temporaryId: Swift.String? {
+    get
+  }
+  public var localCreatedEpoch: Swift.Int? {
+    get
+  }
+  public var reactions: [LikeMindsChat.Reaction]? {
+    get
+  }
+  public var isAnonymous: Swift.Bool? {
+    get
+  }
+  public var allowAddOption: Swift.Bool? {
+    get
+  }
+  public var pollType: Swift.Int? {
+    get
+  }
+  public var pollTypeText: Swift.String? {
+    get
+  }
+  public var submitTypeText: Swift.String? {
+    get
+  }
+  public var expiryTime: Swift.Int? {
+    get
+  }
+  public var multipleSelectNum: Swift.Int? {
+    get
+  }
+  public var multipleSelectState: Swift.Int? {
+    get
+  }
+  public var polls: [LikeMindsChat.Poll]? {
+    get
+  }
+  public var toShowResults: Swift.Bool? {
+    get
+  }
+  public var pollAnswerText: Swift.String? {
+    get
+  }
+  public var replyChatroomId: Swift.String? {
+    get
+  }
+  public var deviceId: Swift.String? {
+    get
+  }
+  public var hasFiles: Swift.Bool? {
+    get
+  }
+  public var hasReactions: Swift.Bool? {
+    get
+  }
+  public var lastUpdated: Swift.Int? {
+    get
+  }
+  public var deletedByMember: LikeMindsChat.Member? {
+    get
+  }
+  public var replyConversation: LikeMindsChat.Conversation? {
+    get
+  }
+  public var conversationStatus: LikeMindsChat.ConversationStatus? {
+    get
+  }
+  required public init(from decoder: any Swift.Decoder) throws
+  public static func builder() -> LikeMindsChat.Conversation.Builder
+  public class Builder {
+    public init()
+    public func id(_ id: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func chatroomId(_ chatroomId: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func communityId(_ communityId: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func member(_ member: LikeMindsChat.Member?) -> LikeMindsChat.Conversation.Builder
+    public func answer(_ answer: Swift.String) -> LikeMindsChat.Conversation.Builder
+    public func createdAt(_ createdAt: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func state(_ state: Swift.Int) -> LikeMindsChat.Conversation.Builder
+    public func attachments(_ attachments: [LikeMindsChat.Attachment]?) -> LikeMindsChat.Conversation.Builder
+    public func lastSeen(_ lastSeen: Swift.Bool?) -> LikeMindsChat.Conversation.Builder
+    public func ogTags(_ ogTags: LikeMindsChat.LinkOGTags?) -> LikeMindsChat.Conversation.Builder
+    public func date(_ date: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func isEdited(_ isEdited: Swift.Bool?) -> LikeMindsChat.Conversation.Builder
+    public func memberId(_ memberId: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func replyConversationId(_ replyConversationId: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func replyConversation(_ replyConversation: LikeMindsChat.Conversation?) -> LikeMindsChat.Conversation.Builder
+    public func deletedBy(_ deletedBy: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func createdEpoch(_ createdEpoch: Swift.Int?) -> LikeMindsChat.Conversation.Builder
+    public func attachmentCount(_ attachmentCount: Swift.Int?) -> LikeMindsChat.Conversation.Builder
+    public func attachmentUploaded(_ attachmentUploaded: Swift.Bool?) -> LikeMindsChat.Conversation.Builder
+    public func uploadWorkerUUID(_ uploadWorkerUUID: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func temporaryId(_ temporaryId: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func localCreatedEpoch(_ localCreatedEpoch: Swift.Int?) -> LikeMindsChat.Conversation.Builder
+    public func reactions(_ reactions: [LikeMindsChat.Reaction]?) -> LikeMindsChat.Conversation.Builder
+    public func isAnonymous(_ isAnonymous: Swift.Bool?) -> LikeMindsChat.Conversation.Builder
+    public func allowAddOption(_ allowAddOption: Swift.Bool?) -> LikeMindsChat.Conversation.Builder
+    public func pollType(_ pollType: Swift.Int?) -> LikeMindsChat.Conversation.Builder
+    public func pollTypeText(_ pollTypeText: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func submitTypeText(_ submitTypeText: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func expiryTime(_ expiryTime: Swift.Int?) -> LikeMindsChat.Conversation.Builder
+    public func multipleSelectNum(_ multipleSelectNum: Swift.Int?) -> LikeMindsChat.Conversation.Builder
+    public func multipleSelectState(_ multipleSelectState: Swift.Int?) -> LikeMindsChat.Conversation.Builder
+    public func polls(_ polls: [LikeMindsChat.Poll]?) -> LikeMindsChat.Conversation.Builder
+    public func toShowResults(_ toShowResults: Swift.Bool?) -> LikeMindsChat.Conversation.Builder
+    public func pollAnswerText(_ pollAnswerText: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func replyChatroomId(_ replyChatroomId: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func deviceId(_ deviceId: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func hasFiles(_ hasFiles: Swift.Bool?) -> LikeMindsChat.Conversation.Builder
+    public func hasReactions(_ hasReactions: Swift.Bool?) -> LikeMindsChat.Conversation.Builder
+    public func lastUpdated(_ lastUpdated: Swift.Int?) -> LikeMindsChat.Conversation.Builder
+    public func deletedByMember(_ deletedByMember: LikeMindsChat.Member?) -> LikeMindsChat.Conversation.Builder
+    public func conversationStatus(_ conversationStatus: LikeMindsChat.ConversationStatus?) -> LikeMindsChat.Conversation.Builder
+    public func build() -> LikeMindsChat.Conversation
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.Conversation.Builder
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GetChatroomActionsRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.GetChatroomActionsRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.GetChatroomActionsRequest.Builder
+    public func build() -> LikeMindsChat.GetChatroomActionsRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetChatroomActionsRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class GetTaggingListRequest : Swift.Encodable {
+  public class Builder {
+    public init()
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.GetTaggingListRequest.Builder
+    public func page(_ page: Swift.Int) -> LikeMindsChat.GetTaggingListRequest.Builder
+    public func pageSize(_ pageSize: Swift.Int) -> LikeMindsChat.GetTaggingListRequest.Builder
+    public func searchName(_ searchName: Swift.String?) -> LikeMindsChat.GetTaggingListRequest.Builder
+    public func build() -> LikeMindsChat.GetTaggingListRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetTaggingListRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class GetConversationRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.GetConversationRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.GetConversationRequest.Builder
+    public func build() -> LikeMindsChat.GetConversationRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetConversationRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct SearchChatroomResponse : Swift.Decodable {
+  public let conversations: [LikeMindsChat.SearchChatroom]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SearchChatroom : Swift.Decodable {
+  public let attachments: [LikeMindsChat.Attachment]
+  public let attendingStatus: Swift.Bool
+  public let chatroom: LikeMindsChat._Chatroom_
+  public let community: LikeMindsChat.Community
+  public let followStatus: Swift.Bool
+  public let id: Swift.Int
+  public let isGuest: Swift.Bool
+  public let isTagged: Swift.Bool
+  public let member: LikeMindsChat.Member
+  public let muteStatus: Swift.Bool
+  public let secretChatroomLeft: Swift.Bool
+  public let state: Swift.Int
+  public let updatedAt: Foundation.TimeInterval
+  public let isDisabled: Swift.Bool?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DeleteConversationsResponse : Swift.Decodable {
+  public var conversations: [LikeMindsChat.Conversation]
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class ConversationSyncRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.ConversationSyncRequest
+  public func build() -> LikeMindsChat.ConversationSyncRequest
+  public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.ConversationSyncRequest
+  public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.ConversationSyncRequest
+  public func page(_ page: Swift.Int) -> LikeMindsChat.ConversationSyncRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsChat.ConversationSyncRequest
+  public func minTimestamp(_ minTimestamp: Swift.Int) -> LikeMindsChat.ConversationSyncRequest
+  public func maxTimestamp(_ maxTimestamp: Swift.Int) -> LikeMindsChat.ConversationSyncRequest
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class PutReactionRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.PutReactionRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String?) -> LikeMindsChat.PutReactionRequest.Builder
+    public func chatroomId(_ chatroomId: Swift.String?) -> LikeMindsChat.PutReactionRequest.Builder
+    public func reaction(_ reaction: Swift.String) -> LikeMindsChat.PutReactionRequest.Builder
+    public func build() -> LikeMindsChat.PutReactionRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.PutReactionRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class SearchChatroomRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.SearchChatroomRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func setSearch(_ search: Swift.String) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func setFollowStatus(_ followStatus: Swift.Bool) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func setPage(_ page: Swift.Int) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func setPageSize(_ pageSize: Swift.Int) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func setSearchType(_ searchType: Swift.String) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func build() -> LikeMindsChat.SearchChatroomRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.SearchChatroomRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class GetHomeFeedRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.GetHomeFeedRequest
+  public func build() -> LikeMindsChat.GetHomeFeedRequest
+  public func page(_ page: Swift.Int) -> LikeMindsChat.GetHomeFeedRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsChat.GetHomeFeedRequest
+  public func minTimestamp(_ minTimestamp: Swift.Int) -> LikeMindsChat.GetHomeFeedRequest
+  public func maxTimestamp(_ maxTimestamp: Swift.Int) -> LikeMindsChat.GetHomeFeedRequest
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Community : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EditConversationResponse : Swift.Decodable {
+  public var conversation: LikeMindsChat.Conversation
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GetExploreTabCountResponse : Swift.Decodable {
+  public let unseenChatroomCount: Swift.Int?
+  public let totalChatroomCount: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class RegisterDeviceRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.RegisterDeviceRequest
+  public func build() -> LikeMindsChat.RegisterDeviceRequest
+  public func deviceId(_ deviceId: Swift.String) -> LikeMindsChat.RegisterDeviceRequest
+  public func token(_ token: Swift.String) -> LikeMindsChat.RegisterDeviceRequest
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class SearchConversationRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.SearchConversationRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func search(_ search: Swift.String) -> LikeMindsChat.SearchConversationRequest.Builder
+    public func followStatus(_ followStatus: Swift.Bool) -> LikeMindsChat.SearchConversationRequest.Builder
+    public func page(_ page: Swift.Int) -> LikeMindsChat.SearchConversationRequest.Builder
+    public func pageSize(_ pageSize: Swift.Int) -> LikeMindsChat.SearchConversationRequest.Builder
+    public func build() -> LikeMindsChat.SearchConversationRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.SearchConversationRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct User : Swift.Codable {
+  public var id: Swift.String?
+  public var imageUrl: Swift.String?, name: Swift.String?, organisationName: Swift.String?
+  public var userUniqueID: Swift.String?, uuid: Swift.String?
+  public var isGuest: Swift.Bool
+  public var isDeleted: Swift.Bool?
+  public var isOwner: Swift.Bool?
+  public var customTitle: Swift.String?
+  public var state: Swift.Int?, updatedAt: Swift.Int?
+  public var sdkClientInfo: LikeMindsChat.SDKClientInfo?
+  public init(from decoder: any Swift.Decoder) throws
+  public var clientUUID: Swift.String? {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Question : Swift.Decodable {
+  public let id: Swift.Int?
+  public let questionTitle: Swift.String?
+  public let state: Swift.Int?
+  public let value: Swift.String?
+  public let optional: Swift.Bool
+  public let helpText: Swift.String?
+  public let field: Swift.Bool?
+  public let isCompulsory: Swift.Bool?
+  public let isHidden: Swift.Bool?
+  public let communityId: Swift.String?
+  public let memberId: Swift.String?
+  public let directoryFields: Swift.Bool?
+  public let imageUrl: Swift.String?
+  public let canAddOtherOptions: Swift.Bool?
+  public let questionChangeState: Swift.Int?
+  public let isAnswerEditable: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ChatRoomActionType : Swift.Int, Swift.Codable {
+  case unknown
+  case rename
+  case viewParticipants
+  case invite
+  case follow
+  case viewCommunity
+  case mute
+  case delete
+  case unMute
+  case unFollow
+  case report
+  case markActive
+  case markInactive
+  case pinChatRoom
+  case unPinChatRoom
+  case leaveChatRoom
+  case addAllMembers
+  case settings
+  case memberCanSendMessage
+  case accessWithoutSubscription
+  case viewProfile
+  case blockDMMember
+  case unblockDMMember
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LikeMindsChat.ChatRoomActionType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LikeMindsChat.ChatRoomActionType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GetChatroomActionsResponse : Swift.Decodable {
+  public var canAccessSecretChatroom: Swift.Bool
+  public var chatroomActions: [LikeMindsChat.ChatroomAction]
+  public var participantCount: Swift.Int
+  public var placeHolder: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ChatroomAction : Swift.Decodable {
+  public var id: LikeMindsChat.ChatRoomActionType
+  public var title: Swift.String
+  public var route: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class ShareChatroomUrlRequest {
+  public static func builder() -> LikeMindsChat.ShareChatroomUrlRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.ShareChatroomUrlRequest.Builder
+    public func domain(_ domain: Swift.String) -> LikeMindsChat.ShareChatroomUrlRequest.Builder
+    public func build() -> LikeMindsChat.ShareChatroomUrlRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.ShareChatroomUrlRequest.Builder
+  @objc deinit
+}
+extension LikeMindsChat.RealmDatabaseAction : Swift.Equatable {}
+extension LikeMindsChat.RealmDatabaseAction : Swift.Hashable {}
+extension LikeMindsChat.LoadConversationType : Swift.Equatable {}
+extension LikeMindsChat.LoadConversationType : Swift.Hashable {}
+extension LikeMindsChat.LoadConversationType : Swift.RawRepresentable {}
+extension LikeMindsChat.GetConversationType : Swift.Equatable {}
+extension LikeMindsChat.GetConversationType : Swift.Hashable {}
+extension LikeMindsChat.GetConversationType : Swift.RawRepresentable {}
+extension LikeMindsChat.GetConversationCountType : Swift.Equatable {}
+extension LikeMindsChat.GetConversationCountType : Swift.Hashable {}
+extension LikeMindsChat.GetConversationCountType : Swift.RawRepresentable {}
+extension LikeMindsChat.ConversationState : Swift.RawRepresentable {}
+extension LikeMindsChat.ConversationState : Swift.CaseIterable {}
+extension LikeMindsChat.ConversationState : Swift.Equatable {}
+extension LikeMindsChat.ConversationState : Swift.Hashable {}
+extension LikeMindsChat.BuildEnvironment : Swift.Equatable {}
+extension LikeMindsChat.BuildEnvironment : Swift.Hashable {}
+extension LikeMindsChat.ReportEntityType : Swift.Equatable {}
+extension LikeMindsChat.ReportEntityType : Swift.Hashable {}
+extension LikeMindsChat.ReportEntityType : Swift.RawRepresentable {}
+extension LikeMindsChat.MemberState : Swift.Equatable {}
+extension LikeMindsChat.MemberState : Swift.Hashable {}
+extension LikeMindsChat.MemberState : Swift.RawRepresentable {}
+extension LikeMindsChat.MemberRightState : Swift.RawRepresentable {}
+extension LikeMindsChat.MemberRightState : Swift.CaseIterable {}
+extension LikeMindsChat.MemberRightState : Swift.Equatable {}
+extension LikeMindsChat.MemberRightState : Swift.Hashable {}
+extension LikeMindsChat.ManagerRightState : Swift.RawRepresentable {}
+extension LikeMindsChat.ManagerRightState : Swift.CaseIterable {}
+extension LikeMindsChat.ManagerRightState : Swift.Equatable {}
+extension LikeMindsChat.ManagerRightState : Swift.Hashable {}
+extension LikeMindsChat.ChatroomType : Swift.RawRepresentable {}
+extension LikeMindsChat.ChatroomType : Swift.CaseIterable {}
+extension LikeMindsChat.ChatroomType : Swift.Equatable {}
+extension LikeMindsChat.ChatroomType : Swift.Hashable {}
+extension LikeMindsChat.ChatRoomActionType : Swift.RawRepresentable {}
+extension LikeMindsChat.ChatRoomActionType : Swift.CaseIterable {}
+extension LikeMindsChat.ChatRoomActionType : Swift.Equatable {}
+extension LikeMindsChat.ChatRoomActionType : Swift.Hashable {}
