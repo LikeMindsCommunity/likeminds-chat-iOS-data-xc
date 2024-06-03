@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.license      = { :type => 'MIT', :file => 'LICENSE' }
     spec.authors      = { 'pushpendrasingh' => 'pushpendra.singh@likeminds.community' }
     spec.source       = { :git => "https://github.com/LikeMindsCommunity/likeminds-chat-iOS-data-xc.git", :tag => spec.version }
-    spec.vendored_frameworks = 'LikeMindsChatData.xcframework'
+    spec.vendored_frameworks = 'LikeMindsChat.xcframework'
   
     spec.ios.deployment_target = '13.0'
     spec.swift_version = '5.0'
