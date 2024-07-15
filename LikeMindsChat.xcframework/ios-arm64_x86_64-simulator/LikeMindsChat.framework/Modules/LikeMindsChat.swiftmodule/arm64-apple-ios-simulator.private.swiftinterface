@@ -319,17 +319,20 @@ public struct CheckDMChatroomResponse : Swift.Decodable {
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
-public protocol LMCallback : AnyObject {
-  func login()
+public typealias LMClientResponse<T> = (LikeMindsChat.LMResponse<T>) -> (Swift.Void) where T : Swift.Decodable
+public struct LMResponse<T> : Swift.Decodable where T : Swift.Decodable {
+  public let success: Swift.Bool
+  public let errorMessage: Swift.String?
+  public let data: T?
+  public init(from decoder: any Swift.Decoder) throws
 }
-extension LikeMindsChat.LMCallback {
-  public func login()
+public struct NoData : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class TokenManager {
   public static var shared: LikeMindsChat.TokenManager {
     get
   }
-  final public func lmCallback(_ lmCallback: any LikeMindsChat.LMCallback) -> LikeMindsChat.TokenManager
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class UpdateLastSeenAndDraftRequest {
@@ -425,22 +428,13 @@ public struct GetContentDownloadSettingsResponse : Swift.Decodable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public typealias LMClientResponse<T> = (LikeMindsChat.LMResponse<T>) -> (Swift.Void) where T : Swift.Decodable
-public struct LMResponse<T> : Swift.Decodable where T : Swift.Decodable {
-  public let success: Swift.Bool
-  public let errorMessage: Swift.String?
-  public let data: T?
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct NoData : Swift.Decodable {
-  public init(from decoder: any Swift.Decoder) throws
-}
 @_hasMissingDesignatedInitializers public class BasePreferences {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SDKPreferences : LikeMindsChat.BasePreferences {
   public static let shared: LikeMindsChat.SDKPreferences
   public func getCommunityId() -> Swift.String?
+  public func getApiKey() -> Swift.String?
   public func getCommunityName() -> Swift.String?
   public func clearData()
   @objc deinit
@@ -534,6 +528,11 @@ public struct GetAllMembersResponse : Swift.Decodable {
   public let totalFilteredMembers: Swift.Int?, totalMembers: Swift.Int?, totalOnlyMembers: Swift.Int?, totalPendingMembers: Swift.Int?, pendingMembersCount: Swift.Int?, adminsCount: Swift.Int?, membersCount: Swift.Int?
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct LMChatTokenResponse : Swift.Decodable {
+  public let accessToken: Swift.String
+  public let refreshToken: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers public class SetChatroomTopicRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.SetChatroomTopicRequest.Builder
   @_hasMissingDesignatedInitializers public class Builder {
@@ -575,10 +574,15 @@ public struct PutMultimediaResponse : Swift.Decodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class LogoutRequest : Swift.Encodable {
-  public static func builder() -> LikeMindsChat.LogoutRequest
-  public func build() -> LikeMindsChat.LogoutRequest
-  public func refreshToken(_ refreshToken: Swift.String) -> LikeMindsChat.LogoutRequest
-  public func deviceId(_ deviceId: Swift.String) -> LikeMindsChat.LogoutRequest
+  public static func builder() -> LikeMindsChat.LogoutRequest.Builder
+  public class Builder {
+    public init()
+    public func refreshToken(_ refreshToken: Swift.String?) -> LikeMindsChat.LogoutRequest.Builder
+    public func deviceId(_ deviceId: Swift.String?) -> LikeMindsChat.LogoutRequest.Builder
+    public func build() -> LikeMindsChat.LogoutRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.LogoutRequest.Builder
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -819,13 +823,20 @@ public struct ConfigResponse : Swift.Decodable {
   public func toBuilder() -> LikeMindsChat.GetConversationsRequest.Builder
   @objc deinit
 }
+public protocol LMChatSDKCallback : AnyObject {
+  func onAccessTokenExpiredAndRefreshed(accessToken: Swift.String, refreshToken: Swift.String)
+  func onRefreshTokenExpired(_ completionHandler: (((accessToken: Swift.String, refreshToken: Swift.String)?) -> Swift.Void)?)
+}
 @_hasMissingDesignatedInitializers public class LMChatClient {
   public static var shared: LikeMindsChat.LMChatClient {
     get
   }
   public static func builder() -> LikeMindsChat.LMChatClient
-  public func lmCallback(_ lmCallback: (any LikeMindsChat.LMCallback)?) -> LikeMindsChat.LMChatClient
   public func build() -> LikeMindsChat.LMChatClient
+  public func getTokens() -> LikeMindsChat.LMResponse<LikeMindsChat.LMChatTokenResponse>
+  public func setTokenManager(with lMChatSDKCallback: any LikeMindsChat.LMChatSDKCallback)
+  public func getAPIKey() -> LikeMindsChat.LMResponse<Swift.String>
+  public func getUserDetails() -> LikeMindsChat.User?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GetConversationsCountRequest {
@@ -992,6 +1003,18 @@ public struct FetchDMFeedResponse : Swift.Decodable {
   public func stopMonitoring()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class RefreshAccessTokenRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.RefreshAccessTokenRequest.Builder
+  public class Builder {
+    public init()
+    public func refreshToken(_ refreshToken: Swift.String) -> LikeMindsChat.RefreshAccessTokenRequest.Builder
+    public func build() -> LikeMindsChat.RefreshAccessTokenRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.RefreshAccessTokenRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public struct Member : Swift.Decodable {
   public var id: Swift.String? {
     get
@@ -1107,6 +1130,19 @@ public enum ReportEntityType : Swift.String {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class ValidateUserRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.ValidateUserRequest.Builder
+  public class Builder {
+    public init()
+    public func accessToken(_ accessToken: Swift.String) -> LikeMindsChat.ValidateUserRequest.Builder
+    public func refreshToken(_ refreshToken: Swift.String) -> LikeMindsChat.ValidateUserRequest.Builder
+    public func build() -> LikeMindsChat.ValidateUserRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.ValidateUserRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 @_hasMissingDesignatedInitializers public class ChatroomSyncRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.ChatroomSyncRequest
   public func build() -> LikeMindsChat.ChatroomSyncRequest
@@ -1158,6 +1194,8 @@ public struct ContentDownloadSetting : Swift.Decodable {
 }
 extension LikeMindsChat.LMChatClient {
   public func initiateUser(request: LikeMindsChat.InitiateUserRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.InitiateUserResponse>?)
+  public func validateUser(request: LikeMindsChat.ValidateUserRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.ValidateUserResponse>?)
+  public func refreshAccessToken(request: LikeMindsChat.RefreshAccessTokenRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.RefreshAccessTokenResponse>?)
   public func registerDevice(request: LikeMindsChat.RegisterDeviceRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.RegisterDeviceResponse>?)
   public func logout(request: LikeMindsChat.LogoutRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
   public func getConfig(response: LikeMindsChat.LMClientResponse<LikeMindsChat.ConfigResponse>?)
@@ -1292,13 +1330,17 @@ public struct ManagerRight : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class InitiateUserRequest : Swift.Encodable {
-  public static func builder() -> LikeMindsChat.InitiateUserRequest
-  public func apiKey(_ apiKey: Swift.String) -> LikeMindsChat.InitiateUserRequest
-  public func isGuest(_ isGuest: Swift.Bool) -> LikeMindsChat.InitiateUserRequest
-  public func userName(_ userName: Swift.String) -> LikeMindsChat.InitiateUserRequest
-  public func uuid(_ uuid: Swift.String) -> LikeMindsChat.InitiateUserRequest
-  public func deviceId(_ deviceId: Swift.String) -> LikeMindsChat.InitiateUserRequest
-  public func build() -> LikeMindsChat.InitiateUserRequest
+  public static func builder() -> LikeMindsChat.InitiateUserRequest.Builder
+  public class Builder {
+    public init()
+    public func isGuest(_ isGuest: Swift.Bool) -> LikeMindsChat.InitiateUserRequest.Builder
+    public func uuid(_ uuid: Swift.String) -> LikeMindsChat.InitiateUserRequest.Builder
+    public func userName(_ userName: Swift.String) -> LikeMindsChat.InitiateUserRequest.Builder
+    public func apiKey(_ apiKey: Swift.String) -> LikeMindsChat.InitiateUserRequest.Builder
+    public func build() -> LikeMindsChat.InitiateUserRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.InitiateUserRequest.Builder
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -1514,6 +1556,13 @@ public enum ChatroomType : Swift.Int, Swift.Codable {
   public var rawValue: Swift.Int {
     get
   }
+}
+public struct ValidateUserResponse : Swift.Decodable {
+  public let appAccess: Swift.Bool?
+  public let community: LikeMindsChat.Community?
+  public let hasAnswers: Swift.Bool?
+  public let user: LikeMindsChat.User?
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct GetParticipantsResponse : Swift.Decodable {
   public var canEditParticipant: Swift.Bool?
@@ -1980,16 +2029,27 @@ public struct BlockMemberResponse : Swift.Decodable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+public class RefreshAccessTokenResponse : Swift.Decodable {
+  final public let accessToken: Swift.String?
+  final public let refreshToken: Swift.String?
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public struct GetExploreTabCountResponse : Swift.Decodable {
   public let unseenChatroomCount: Swift.Int?
   public let totalChatroomCount: Swift.Int?
   public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class RegisterDeviceRequest : Swift.Encodable {
-  public static func builder() -> LikeMindsChat.RegisterDeviceRequest
-  public func build() -> LikeMindsChat.RegisterDeviceRequest
-  public func deviceId(_ deviceId: Swift.String) -> LikeMindsChat.RegisterDeviceRequest
-  public func token(_ token: Swift.String) -> LikeMindsChat.RegisterDeviceRequest
+  public static func builder() -> LikeMindsChat.RegisterDeviceRequest.Builder
+  public class Builder {
+    public init()
+    public func deviceId(_ deviceId: Swift.String?) -> LikeMindsChat.RegisterDeviceRequest.Builder
+    public func token(_ token: Swift.String?) -> LikeMindsChat.RegisterDeviceRequest.Builder
+    public func build() -> LikeMindsChat.RegisterDeviceRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.RegisterDeviceRequest.Builder
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
