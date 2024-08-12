@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name LikeMindsChat
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LikeMindsChat
 import Alamofire
 import FirebaseCore
 import FirebaseDatabase
@@ -335,6 +335,18 @@ public struct NoData : Swift.Decodable {
   }
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class GetPollUsersRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.GetPollUsersRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func pollOptionId(_ pollOptionId: Swift.String) -> LikeMindsChat.GetPollUsersRequest.Builder
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.GetPollUsersRequest.Builder
+    public func build() -> LikeMindsChat.GetPollUsersRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.GetPollUsersRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 @_hasMissingDesignatedInitializers public class UpdateLastSeenAndDraftRequest {
   public static func builder() -> LikeMindsChat.UpdateLastSeenAndDraftRequest.Builder
   @_hasMissingDesignatedInitializers public class Builder {
@@ -415,6 +427,43 @@ public struct GetChatroomResponse : Swift.Decodable {
 }
 public struct GetContentDownloadSettingsResponse : Swift.Decodable {
   public var settings: [LikeMindsChat.ContentDownloadSetting]?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PollOption : Swift.Decodable {
+  public let id: Swift.String?
+  public let text: Swift.String?
+  public let isSelected: Swift.Bool
+  public let percentage: Swift.Double
+  public let uuid: Swift.String?
+  public let voteCount: Swift.Int
+}
+extension LikeMindsChat.PollOption {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LMMeta : Swift.Decodable {
+  public let options: [LikeMindsChat.PollOption]
+  public let pollAnswerText: Swift.String?
+  public let isShowResult: Swift.Bool?
+  public let voteCount: Swift.Int?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case options
+    case pollAnswerText
+    case isShowResult
+    case voteCount
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
   public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class EditChatroomTitleRequest : Swift.Encodable {
@@ -572,6 +621,11 @@ public struct PutMultimediaResponse : Swift.Decodable {
   public func toBuilder() -> LikeMindsChat.EditConversationRequest.Builder
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct PostPollConversationResponse : Swift.Decodable {
+  public var id: Swift.String?
+  public var conversation: LikeMindsChat.Conversation?
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class LogoutRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.LogoutRequest.Builder
@@ -879,6 +933,64 @@ public struct ReportTag : Swift.Decodable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
+@_hasMissingDesignatedInitializers public class PostPollConversationRequest : Swift.Encodable {
+  public var chatroomId: Swift.String {
+    get
+  }
+  public var text: Swift.String {
+    get
+  }
+  public var repliedConversationId: Swift.String? {
+    get
+  }
+  public var polls: [LikeMindsChat.Poll] {
+    get
+  }
+  public var pollType: Swift.Int {
+    get
+  }
+  public var multipleSelectState: Swift.Int? {
+    get
+  }
+  public var multipleSelectNo: Swift.Int? {
+    get
+  }
+  public var isAnonymous: Swift.Bool {
+    get
+  }
+  public var allowAddOption: Swift.Bool {
+    get
+  }
+  public var expiryTime: Swift.Int {
+    get
+  }
+  public var temporaryId: Swift.String? {
+    get
+  }
+  public var state: Swift.Int {
+    get
+  }
+  public static func builder() -> LikeMindsChat.PostPollConversationRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func text(_ text: Swift.String) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func repliedConversationId(_ repliedConversationId: Swift.String?) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func polls(_ polls: [LikeMindsChat.Poll]) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func pollType(_ pollType: Swift.Int) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func multipleSelectState(_ multipleSelectState: Swift.Int?) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func multipleSelectNo(_ multipleSelectNo: Swift.Int?) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func isAnonymous(_ isAnonymous: Swift.Bool) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func allowAddOption(_ allowAddOption: Swift.Bool) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func expiryTime(_ expiryTime: Swift.Int) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func temporaryId(_ temporaryId: Swift.String?) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func state(_ state: LikeMindsChat.ConversationState) -> LikeMindsChat.PostPollConversationRequest.Builder
+    public func build() -> LikeMindsChat.PostPollConversationRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.PostPollConversationRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public enum ConversationState : Swift.Int, Swift.Codable {
   case unknown
   case normal
@@ -959,6 +1071,19 @@ public enum BuildEnvironment {
 }
 @_hasMissingDesignatedInitializers public class BuildManager {
   @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SubmitPollRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.SubmitPollRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.SubmitPollRequest.Builder
+    public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.SubmitPollRequest.Builder
+    public func polls(_ polls: [LikeMindsChat.Poll]) -> LikeMindsChat.SubmitPollRequest.Builder
+    public func build() -> LikeMindsChat.SubmitPollRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.SubmitPollRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct SearchMembersResponse : Swift.Decodable {
   public let community: LikeMindsChat.Community?
@@ -1228,10 +1353,10 @@ extension LikeMindsChat.LMChatClient {
   public func muteChatroom(request: LikeMindsChat.MuteChatroomRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
   public func markReadChatroom(request: LikeMindsChat.MarkReadChatroomRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
   public func setChatroomTopic(request: LikeMindsChat.SetChatroomTopicRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
-  public func addPollOption()
-  public func submitPoll()
-  public func getPollUsers()
-  public func postPollConversation()
+  public func addPollOption(request: LikeMindsChat.AddPollOptionRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.AddPollOptionResponse>?)
+  public func submitPoll(request: LikeMindsChat.SubmitPollRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
+  public func getPollUsers(request: LikeMindsChat.GetPollUsersRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetPollUsersResponse>?)
+  public func postPollConversation(request: LikeMindsChat.PostPollConversationRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.PostPollConversationResponse>?)
   public func decodeUrl(request: LikeMindsChat.DecodeUrlRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.DecodeUrlResponse>?)
   public func getTaggingList(request: LikeMindsChat.GetTaggingListRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.GetTaggingListResponse>?)
   public func getDBEmpty()
@@ -1405,6 +1530,10 @@ public protocol ConversationChangeDelegate : AnyObject {
   public func toBuilder() -> LikeMindsChat.MarkReadChatroomRequest.Builder
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct GetPollUsersResponse : Swift.Decodable {
+  public var members: [LikeMindsChat.Member]?
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class UpdateTemporaryConversationRequest {
   public static func builder() -> LikeMindsChat.UpdateTemporaryConversationRequest.Builder
@@ -1653,13 +1782,29 @@ public struct ShowDirectMessageModel : Swift.Decodable {
 @_hasMissingDesignatedInitializers public class Poll : Swift.Codable {
   final public let id: Swift.String?
   final public let text: Swift.String?
-  final public let isSelected: Swift.Bool?
-  final public let percentage: Swift.Int?
+  public var isSelected: Swift.Bool?
+  public var percentage: Swift.Double?
   final public let subText: Swift.String?
-  final public let noVotes: Swift.Int?
+  public var noVotes: Swift.Int?
+  final public let member: LikeMindsChat.User?
   final public let userId: Swift.String?
   final public let conversationId: Swift.String?
   required public init(from decoder: any Swift.Decoder) throws
+  public static func builder() -> LikeMindsChat.Poll.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func id(_ id: Swift.String?) -> LikeMindsChat.Poll.Builder
+    public func text(_ text: Swift.String?) -> LikeMindsChat.Poll.Builder
+    public func isSelected(_ isSelected: Swift.Bool?) -> LikeMindsChat.Poll.Builder
+    public func percentage(_ percentage: Swift.Double?) -> LikeMindsChat.Poll.Builder
+    public func subText(_ subText: Swift.String?) -> LikeMindsChat.Poll.Builder
+    public func noVotes(_ noVotes: Swift.Int?) -> LikeMindsChat.Poll.Builder
+    public func member(_ member: LikeMindsChat.User?) -> LikeMindsChat.Poll.Builder
+    public func userId(_ userId: Swift.String?) -> LikeMindsChat.Poll.Builder
+    public func conversationId(_ conversationId: Swift.String?) -> LikeMindsChat.Poll.Builder
+    public func build() -> LikeMindsChat.Poll
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.Poll.Builder
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -1933,6 +2078,21 @@ public struct DeleteConversationsResponse : Swift.Decodable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public struct LMWidget : Swift.Decodable {
+  public let id: Swift.String?
+  public let parentEntityID: Swift.String?
+  public let parentEntityType: Swift.String?
+  public let metadata: [Swift.String : Any]?
+  public let createdAt: Swift.Double?
+  public let updatedAt: Swift.Double?
+  public let lmMeta: LikeMindsChat.LMMeta?
+}
+extension LikeMindsChat.LMWidget {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AnyDecodable : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers public class PutReactionRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.PutReactionRequest.Builder
   @_hasMissingDesignatedInitializers public class Builder {
@@ -2083,10 +2243,26 @@ public struct User : Swift.Codable {
   }
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public struct AddPollOptionResponse : Swift.Decodable {
+  public var poll: LikeMindsChat.Poll
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct CheckDMStatusResponse : Swift.Decodable {
   public let showDM: Swift.Bool?
   public let cta: Swift.String?
   public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class AddPollOptionRequest : Swift.Encodable {
+  public static func builder() -> LikeMindsChat.AddPollOptionRequest.Builder
+  @_hasMissingDesignatedInitializers public class Builder {
+    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.AddPollOptionRequest.Builder
+    public func poll(_ poll: LikeMindsChat.Poll) -> LikeMindsChat.AddPollOptionRequest.Builder
+    public func build() -> LikeMindsChat.AddPollOptionRequest
+    @objc deinit
+  }
+  public func toBuilder() -> LikeMindsChat.AddPollOptionRequest.Builder
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct Question : Swift.Decodable {
   public let id: Swift.Int?
@@ -2165,6 +2341,9 @@ public struct ChatroomAction : Swift.Decodable {
   public func toBuilder() -> LikeMindsChat.ShareChatroomUrlRequest.Builder
   @objc deinit
 }
+extension LikeMindsChat.LMMeta.CodingKeys : Swift.Equatable {}
+extension LikeMindsChat.LMMeta.CodingKeys : Swift.Hashable {}
+extension LikeMindsChat.LMMeta.CodingKeys : Swift.RawRepresentable {}
 extension LikeMindsChat.BlockMemberRequest.BlockState : Swift.Equatable {}
 extension LikeMindsChat.BlockMemberRequest.BlockState : Swift.Hashable {}
 extension LikeMindsChat.BlockMemberRequest.BlockState : Swift.RawRepresentable {}

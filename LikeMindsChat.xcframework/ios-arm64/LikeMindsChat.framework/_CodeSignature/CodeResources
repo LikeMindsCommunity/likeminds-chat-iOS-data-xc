@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WkcHs4xMqug2OrWhWjmKjPjBDc8=
+		OUHR1Njhg7x4eEFVNOOLmXmfYNg=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		pXE2Szo/nZOqGCN5djCCwFKRv90=
+		5DbGzMxifB+OKRm7LWJxazNnHQY=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		JShKx1JE5eW8DVrSIwny2XImy+Q=
+		o6WIpp45/UYpxcq4LnLhMJrKqnk=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		JShKx1JE5eW8DVrSIwny2XImy+Q=
+		o6WIpp45/UYpxcq4LnLhMJrKqnk=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Kh9KSdaJr1/hzynkoeaSiXfBIJE=
+		LKnmPLuJ3TnAPKZPHT+Rlr7iSYc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hptZi3lVIYbNzgy6pOc0vH/lSrV8wrZuR3Y7FCDqwPs=
+			pO/Zl4IGiUt25PK40xaNTMNivi5lauPQ/gCIopKcyn0=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EziGDAqohEHhOMCXpCV9wJwiu28vtIaH4py8+dnEhdo=
+			ZivXIhWwnMfoZjUiqWKcZez28GfBPhQIijd/aPTv/OA=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EziGDAqohEHhOMCXpCV9wJwiu28vtIaH4py8+dnEhdo=
+			ZivXIhWwnMfoZjUiqWKcZez28GfBPhQIijd/aPTv/OA=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TEv/BdG40U6LcXZ0OkMIYoaHU8N6D5fbQW5EtkSS6B0=
+			Rfk2PL69cbnOSp2H4QyQFCCL2pAW594046I4amoXgXY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
