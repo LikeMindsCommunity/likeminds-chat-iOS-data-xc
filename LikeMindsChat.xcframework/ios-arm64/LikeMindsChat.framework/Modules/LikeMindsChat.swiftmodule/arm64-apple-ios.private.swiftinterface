@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.7.6 clang-1600.0.24.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LikeMindsChat
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Alamofire
 import FirebaseCore
 import FirebaseDatabase
@@ -34,7 +35,7 @@ public enum ConversationStatus : Swift.String, RealmSwift.PersistableEnum {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [LikeMindsChat.ConversationStatus]
   public typealias RawValue = Swift.String
-  public static var allCases: [LikeMindsChat.ConversationStatus] {
+  nonisolated public static var allCases: [LikeMindsChat.ConversationStatus] {
     get
   }
   public var rawValue: Swift.String {
@@ -891,6 +892,7 @@ public protocol LMChatSDKCallback : AnyObject {
   public func setTokenManager(with lMChatSDKCallback: any LikeMindsChat.LMChatSDKCallback)
   public func getAPIKey() -> LikeMindsChat.LMResponse<Swift.String>
   public func getUserDetails() -> LikeMindsChat.User?
+  public func excludeConversationStates(_ states: [LikeMindsChat.ConversationState])
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GetConversationsCountRequest {
@@ -1018,7 +1020,7 @@ public enum ConversationState : Swift.Int, Swift.Codable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LikeMindsChat.ConversationState]
   public typealias RawValue = Swift.Int
-  public static var allCases: [LikeMindsChat.ConversationState] {
+  nonisolated public static var allCases: [LikeMindsChat.ConversationState] {
     get
   }
   public var rawValue: Swift.Int {
@@ -1410,7 +1412,7 @@ public enum MemberRightState : Swift.Int, Swift.Codable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LikeMindsChat.MemberRightState]
   public typealias RawValue = Swift.Int
-  public static var allCases: [LikeMindsChat.MemberRightState] {
+  nonisolated public static var allCases: [LikeMindsChat.MemberRightState] {
     get
   }
   public var rawValue: Swift.Int {
@@ -1429,7 +1431,7 @@ public enum ManagerRightState : Swift.Int, Swift.Codable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LikeMindsChat.ManagerRightState]
   public typealias RawValue = Swift.Int
-  public static var allCases: [LikeMindsChat.ManagerRightState] {
+  nonisolated public static var allCases: [LikeMindsChat.ManagerRightState] {
     get
   }
   public var rawValue: Swift.Int {
@@ -1476,7 +1478,7 @@ public struct ManagerRight : Swift.Codable {
   public var text: Swift.String {
     get
   }
-  public var isFromNotification: Swift.Bool {
+  public var isFromNotification: Swift.Bool? {
     get
   }
   public var shareLink: Swift.String? {
@@ -1501,7 +1503,7 @@ public struct ManagerRight : Swift.Codable {
     public init()
     public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.PostConversationRequest.Builder
     public func text(_ text: Swift.String) -> LikeMindsChat.PostConversationRequest.Builder
-    public func isFromNotification(_ isFromNotification: Swift.Bool) -> LikeMindsChat.PostConversationRequest.Builder
+    public func isFromNotification(_ isFromNotification: Swift.Bool?) -> LikeMindsChat.PostConversationRequest.Builder
     public func shareLink(_ shareLink: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
     public func ogTags(_ ogTags: LikeMindsChat.LinkOGTags?) -> LikeMindsChat.PostConversationRequest.Builder
     public func repliedConversationId(_ repliedConversationId: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
@@ -1653,7 +1655,7 @@ public enum ChatRequestState : Swift.Int, Swift.Codable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LikeMindsChat.ChatRequestState]
   public typealias RawValue = Swift.Int
-  public static var allCases: [LikeMindsChat.ChatRequestState] {
+  nonisolated public static var allCases: [LikeMindsChat.ChatRequestState] {
     get
   }
   public var rawValue: Swift.Int {
@@ -1679,7 +1681,7 @@ public enum ChatroomType : Swift.Int, Swift.Codable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LikeMindsChat.ChatroomType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [LikeMindsChat.ChatroomType] {
+  nonisolated public static var allCases: [LikeMindsChat.ChatroomType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -2310,7 +2312,7 @@ public enum ChatRoomActionType : Swift.Int, Swift.Codable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LikeMindsChat.ChatRoomActionType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [LikeMindsChat.ChatRoomActionType] {
+  nonisolated public static var allCases: [LikeMindsChat.ChatRoomActionType] {
     get
   }
   public var rawValue: Swift.Int {
