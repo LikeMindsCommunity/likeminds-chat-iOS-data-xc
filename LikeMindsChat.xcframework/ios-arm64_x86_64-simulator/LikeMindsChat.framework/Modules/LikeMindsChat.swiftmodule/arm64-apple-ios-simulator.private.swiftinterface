@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.7.6 clang-1600.0.24.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LikeMindsChat
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name LikeMindsChat
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Alamofire
 import FirebaseCore
@@ -364,10 +364,10 @@ public struct GetConversationsResponse : Swift.Decodable {
   public var count: Swift.Int?
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct Attachment : Swift.Decodable {
+public struct Attachment : Swift.Codable {
   public let id: Swift.String?
   public let name: Swift.String?
-  public let url: Swift.String?
+  public var url: Swift.String?
   public let type: Swift.String?
   public let index: Swift.Int?
   public let width: Swift.Int?
@@ -381,6 +381,7 @@ public struct Attachment : Swift.Decodable {
   public let createdAt: Swift.Int?
   public let updatedAt: Swift.Int?
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public static func builder() -> LikeMindsChat.Attachment.Builder
   @_hasMissingDesignatedInitializers public class Builder {
     public func id(_ id: Swift.String?) -> LikeMindsChat.Attachment.Builder
@@ -606,10 +607,6 @@ public enum RealmDatabaseAction {
     get
   }
 }
-public struct PutMultimediaResponse : Swift.Decodable {
-  public var conversation: LikeMindsChat.Conversation?
-  public init(from decoder: any Swift.Decoder) throws
-}
 @_hasMissingDesignatedInitializers public class EditConversationRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.EditConversationRequest.Builder
   @_hasMissingDesignatedInitializers public class Builder {
@@ -679,26 +676,6 @@ public struct CheckDMLimitResponse : Swift.Decodable {
 }
 @_hasMissingDesignatedInitializers public class LMLogger {
   @objc deinit
-}
-@_hasMissingDesignatedInitializers public class PutMultimediaRequest : Swift.Encodable {
-  public static func builder() -> LikeMindsChat.PutMultimediaRequest.Builder
-  @_hasMissingDesignatedInitializers public class Builder {
-    public func conversationId(_ conversationId: Swift.String) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func name(_ name: Swift.String) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func url(_ url: Swift.String) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func thumbnailUrl(_ thumbnailUrl: Swift.String?) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func type(_ type: Swift.String) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func filesCount(_ filesCount: Swift.Int?) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func index(_ index: Swift.Int?) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func width(_ width: Swift.Int?) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func height(_ height: Swift.Int?) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func meta(_ meta: LikeMindsChat.AttachmentMeta?) -> LikeMindsChat.PutMultimediaRequest.Builder
-    public func build() -> LikeMindsChat.PutMultimediaRequest
-    @objc deinit
-  }
-  public func toBuilder() -> LikeMindsChat.PutMultimediaRequest.Builder
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class Reaction : Swift.Decodable {
   final public let member: LikeMindsChat.Member?
@@ -1016,6 +993,7 @@ public enum ConversationState : Swift.Int, Swift.Codable {
   case directMessageMemberRequestRejected
   case directMessageMemberRequestApproved
   case chatroomDataHeader
+  case bubbleShimmer
   public static func isPoll(stateValue: Swift.Int) -> Swift.Bool
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LikeMindsChat.ConversationState]
@@ -1212,6 +1190,9 @@ public struct Member : Swift.Decodable {
   public var uuid: Swift.String? {
     get
   }
+  public var roles: [LikeMindsChat.UserRole]? {
+    get
+  }
   public init(from decoder: any Swift.Decoder) throws
   public func communityManager() -> Swift.String?
 }
@@ -1298,6 +1279,7 @@ public struct GetMemberStateResponse : Swift.Codable {
   public let memberRights: [LikeMindsChat.MemberRight]?
   public let state: Swift.Int?
   public let toolState: Swift.Int?
+  public let roles: [LikeMindsChat.UserRole]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1376,7 +1358,6 @@ extension LikeMindsChat.LMChatClient {
   public func putReaction(request: LikeMindsChat.PutReactionRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
   public func deleteReaction(request: LikeMindsChat.DeleteReactionRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.NoData>?)
   public func getUnreadConversationNotification()
-  public func putMultimedia(request: LikeMindsChat.PutMultimediaRequest, response: LikeMindsChat.LMClientResponse<LikeMindsChat.PutMultimediaResponse>?)
   public func updateLastSeenAndDraft()
   public func editChatroomTitle()
   public func savePostedConversation(request: LikeMindsChat.SavePostedConversationRequest)
@@ -1490,7 +1471,10 @@ public struct ManagerRight : Swift.Codable {
   public var repliedConversationId: Swift.String? {
     get
   }
-  public var attachmentCount: Swift.Int? {
+  public var triggerBot: Swift.Bool? {
+    get
+  }
+  public var attachments: [LikeMindsChat.Attachment]? {
     get
   }
   public var temporaryId: Swift.String? {
@@ -1507,9 +1491,10 @@ public struct ManagerRight : Swift.Codable {
     public func shareLink(_ shareLink: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
     public func ogTags(_ ogTags: LikeMindsChat.LinkOGTags?) -> LikeMindsChat.PostConversationRequest.Builder
     public func repliedConversationId(_ repliedConversationId: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
-    public func attachmentCount(_ attachmentCount: Swift.Int?) -> LikeMindsChat.PostConversationRequest.Builder
     public func temporaryId(_ temporaryId: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
     public func repliedChatroomId(_ repliedChatroomId: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func attachments(_ attachments: [LikeMindsChat.Attachment]?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func triggerBot(_ triggerBot: Swift.Bool?) -> LikeMindsChat.PostConversationRequest.Builder
     public func build() -> LikeMindsChat.PostConversationRequest
     @objc deinit
   }
@@ -2095,6 +2080,17 @@ extension LikeMindsChat.LMWidget {
 public struct AnyDecodable : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum UserRole : Swift.String, Swift.Codable {
+  case chatbot
+  case member
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class PutReactionRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.PutReactionRequest.Builder
   @_hasMissingDesignatedInitializers public class Builder {
@@ -2239,6 +2235,7 @@ public struct User : Swift.Codable {
   public var customTitle: Swift.String?
   public var state: Swift.Int?, updatedAt: Swift.Int?
   public var sdkClientInfo: LikeMindsChat.SDKClientInfo?
+  public var roles: [LikeMindsChat.UserRole]?
   public init(from decoder: any Swift.Decoder) throws
   public var clientUUID: Swift.String? {
     get
@@ -2396,6 +2393,9 @@ extension LikeMindsChat.ChatroomType : Swift.Equatable {}
 extension LikeMindsChat.ChatroomType : Swift.Hashable {}
 extension LikeMindsChat.GetAllMembersRequest.MemberTypes : Swift.Equatable {}
 extension LikeMindsChat.GetAllMembersRequest.MemberTypes : Swift.Hashable {}
+extension LikeMindsChat.UserRole : Swift.Equatable {}
+extension LikeMindsChat.UserRole : Swift.Hashable {}
+extension LikeMindsChat.UserRole : Swift.RawRepresentable {}
 extension LikeMindsChat.CommunitySetting.SettingType : Swift.Equatable {}
 extension LikeMindsChat.CommunitySetting.SettingType : Swift.Hashable {}
 extension LikeMindsChat.CommunitySetting.SettingType : Swift.RawRepresentable {}

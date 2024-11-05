@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
     spec.name         = "LikeMindsChatData"
     spec.summary      = "Data Layer for LikeMindsChatData"
     spec.homepage     = 'https://likeminds.community/'
-    spec.version      = "1.3.1"
+    spec.version      = "1.4.0"
     spec.license      = { :type => 'MIT', :file => 'LICENSE' }
     spec.authors      = { 'pushpendrasingh' => 'pushpendra.singh@likeminds.community' }
     spec.source       = { :git => "https://github.com/LikeMindsCommunity/likeminds-chat-iOS-data-xc.git", :tag => spec.version }
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
     spec.swift_version = '5.0'
     spec.requires_arc = true
   
-    spec.dependency 'Alamofire', '~> 5.7'
+    spec.dependency 'Alamofire'
     spec.dependency 'RealmSwift', '~>10'
     spec.dependency "FirebaseCore"
     spec.dependency "FirebaseMessaging"

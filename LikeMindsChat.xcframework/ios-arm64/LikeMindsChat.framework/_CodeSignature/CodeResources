@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/LikeMindsChat-Swift.h</key>
 		<data>
-		0kUuUS7NeS887ySY9765htjlMF8=
+		Lb89/EJNSVgekozrNHnq3KDkAlU=
 		</data>
 		<key>Headers/LikeMindsChat.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mMhoir+v5N7Oh51H80G0LJxk9fw=
+		7/g8csmiTcFgkOithUBpBHPsDZQ=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kK1iLoMTXbr+unw6h+6zecAdziE=
+		PV+TPhfe8ExaZ4mpfxrfdcuLeRE=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		V4OgBX5lFZrLXbtSl1O4p478lEU=
+		eZFOxzog83WjbgoK8U6q6bG6K7A=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		dKedO1exTAQ8a8JcveB7dfjZRCY=
+		49HgJwwQa4B+UGXzwNTd86tr3uo=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		V4OgBX5lFZrLXbtSl1O4p478lEU=
+		eZFOxzog83WjbgoK8U6q6bG6K7A=
 		</data>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		fPNtzRBZ69483QRrVUZq/bYq5dE=
+		3ky+qcj8nbzKqj0HXuQkwujajSs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			evaQXMJpQSeZOr/a+QeGxDU2jOwEniiQD2M5FbNysag=
+			QRLz0iG0ZY182wwDQ5oWPS4/XUrsXpipuPZ0a9WPDtk=
 			</data>
 		</dict>
 		<key>Headers/LikeMindsChat.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L4pZ3YsX+2maJ5niiIrko6yPyfmTFlIzEY2kFCINB7E=
+			QJQoTaU7pYvL8PYbItxpP25+3ppBKhXE/xKEaKddJek=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5h2pXGJNXe3JuHn5HZuGnRgxRa0K++5hxZp04iesEP4=
+			GNvkoyCaDdEA7I7XsJDfvEkiFKhVGyfJbttzXWkqoD0=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s+jYLhrPY8AIzoSAxxRcwPwkGCtEXtWnJfgmk9VX688=
+			WNgQyr9ot/PkTG6h9mHqyeKTR7pb82JSu0FmbSh05w0=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5h2pXGJNXe3JuHn5HZuGnRgxRa0K++5hxZp04iesEP4=
+			GNvkoyCaDdEA7I7XsJDfvEkiFKhVGyfJbttzXWkqoD0=
 			</data>
 		</dict>
 		<key>Modules/LikeMindsChat.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			51UBYJl/i1eLTQuAytV7XxYmoAjln+imHsrA+lYl38A=
+			ZZsHBChp+r44sT0UdaPWF2o+LQNv8Ao5XCZCbhX3mLo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
