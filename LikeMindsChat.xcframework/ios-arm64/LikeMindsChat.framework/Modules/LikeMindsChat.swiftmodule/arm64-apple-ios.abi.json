@@ -8671,6 +8671,158 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "widgets",
+            "printedName": "widgets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : LikeMindsChat.Widget]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : LikeMindsChat.Widget]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Widget",
+                        "printedName": "LikeMindsChat.Widget",
+                        "usr": "s:13LikeMindsChat6WidgetV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat24GetConversationsResponseV7widgetsSDySSAA6WidgetVGSgvp",
+            "mangledName": "$s13LikeMindsChat24GetConversationsResponseV7widgetsSDySSAA6WidgetVGSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : LikeMindsChat.Widget]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : LikeMindsChat.Widget]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Widget",
+                            "printedName": "LikeMindsChat.Widget",
+                            "usr": "s:13LikeMindsChat6WidgetV"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat24GetConversationsResponseV7widgetsSDySSAA6WidgetVGSgvg",
+                "mangledName": "$s13LikeMindsChat24GetConversationsResponseV7widgetsSDySSAA6WidgetVGSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : LikeMindsChat.Widget]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : LikeMindsChat.Widget]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Widget",
+                            "printedName": "LikeMindsChat.Widget",
+                            "usr": "s:13LikeMindsChat6WidgetV"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat24GetConversationsResponseV7widgetsSDySSAA6WidgetVGSgvs",
+                "mangledName": "$s13LikeMindsChat24GetConversationsResponseV7widgetsSDySSAA6WidgetVGSgvs",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat24GetConversationsResponseV7widgetsSDySSAA6WidgetVGSgvM",
+                "mangledName": "$s13LikeMindsChat24GetConversationsResponseV7widgetsSDySSAA6WidgetVGSgvM",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -11582,6 +11734,40 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "toDictionary",
+            "printedName": "toDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsChat10PollOptionV12toDictionarySDySSypGyF",
+            "mangledName": "$s13LikeMindsChat10PollOptionV12toDictionarySDySSypGyF",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -11611,794 +11797,6 @@
         "declKind": "Struct",
         "usr": "s:13LikeMindsChat10PollOptionV",
         "mangledName": "$s13LikeMindsChat10PollOptionV",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "LMMeta",
-        "printedName": "LMMeta",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "options",
-            "printedName": "options",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[LikeMindsChat.PollOption]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PollOption",
-                    "printedName": "LikeMindsChat.PollOption",
-                    "usr": "s:13LikeMindsChat10PollOptionV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat6LMMetaV7optionsSayAA10PollOptionVGvp",
-            "mangledName": "$s13LikeMindsChat6LMMetaV7optionsSayAA10PollOptionVGvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[LikeMindsChat.PollOption]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PollOption",
-                        "printedName": "LikeMindsChat.PollOption",
-                        "usr": "s:13LikeMindsChat10PollOptionV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat6LMMetaV7optionsSayAA10PollOptionVGvg",
-                "mangledName": "$s13LikeMindsChat6LMMetaV7optionsSayAA10PollOptionVGvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "pollAnswerText",
-            "printedName": "pollAnswerText",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat6LMMetaV14pollAnswerTextSSSgvp",
-            "mangledName": "$s13LikeMindsChat6LMMetaV14pollAnswerTextSSSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat6LMMetaV14pollAnswerTextSSSgvg",
-                "mangledName": "$s13LikeMindsChat6LMMetaV14pollAnswerTextSSSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isShowResult",
-            "printedName": "isShowResult",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat6LMMetaV12isShowResultSbSgvp",
-            "mangledName": "$s13LikeMindsChat6LMMetaV12isShowResultSbSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Bool?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat6LMMetaV12isShowResultSbSgvg",
-                "mangledName": "$s13LikeMindsChat6LMMetaV12isShowResultSbSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "voteCount",
-            "printedName": "voteCount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat6LMMetaV9voteCountSiSgvp",
-            "mangledName": "$s13LikeMindsChat6LMMetaV9voteCountSiSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat6LMMetaV9voteCountSiSgvg",
-                "mangledName": "$s13LikeMindsChat6LMMetaV9voteCountSiSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "CodingKeys",
-            "printedName": "CodingKeys",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "options",
-                "printedName": "options",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LikeMindsChat.LMMeta.CodingKeys.Type) -> LikeMindsChat.LMMeta.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                        "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                            "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO7optionsyA2EmF",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO7optionsyA2EmF",
-                "moduleName": "LikeMindsChat"
-              },
-              {
-                "kind": "Var",
-                "name": "pollAnswerText",
-                "printedName": "pollAnswerText",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LikeMindsChat.LMMeta.CodingKeys.Type) -> LikeMindsChat.LMMeta.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                        "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                            "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO14pollAnswerTextyA2EmF",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO14pollAnswerTextyA2EmF",
-                "moduleName": "LikeMindsChat"
-              },
-              {
-                "kind": "Var",
-                "name": "isShowResult",
-                "printedName": "isShowResult",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LikeMindsChat.LMMeta.CodingKeys.Type) -> LikeMindsChat.LMMeta.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                        "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                            "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO12isShowResultyA2EmF",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO12isShowResultyA2EmF",
-                "moduleName": "LikeMindsChat"
-              },
-              {
-                "kind": "Var",
-                "name": "voteCount",
-                "printedName": "voteCount",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LikeMindsChat.LMMeta.CodingKeys.Type) -> LikeMindsChat.LMMeta.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                        "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                            "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO9voteCountyA2EmF",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO9voteCountyA2EmF",
-                "moduleName": "LikeMindsChat"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LikeMindsChat.LMMeta.CodingKeys?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                        "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO8rawValueAESgSS_tcfc",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO8rawValueAESgSS_tcfc",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO8rawValueSSvp",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO8rawValueSSvp",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO8rawValueSSvg",
-                    "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO8rawValueSSvg",
-                    "moduleName": "LikeMindsChat",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "stringValue",
-                "printedName": "stringValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO11stringValueSSvp",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO11stringValueSSvp",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO11stringValueSSvg",
-                    "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO11stringValueSSvg",
-                    "moduleName": "LikeMindsChat",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(stringValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LikeMindsChat.LMMeta.CodingKeys?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                        "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO11stringValueAESgSS_tcfc",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO11stringValueAESgSS_tcfc",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "intValue",
-                "printedName": "intValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO8intValueSiSgvp",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO8intValueSiSgvp",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.Int?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO8intValueSiSgvg",
-                    "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO8intValueSiSgvg",
-                    "moduleName": "LikeMindsChat",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(intValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LikeMindsChat.LMMeta.CodingKeys?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LikeMindsChat.LMMeta.CodingKeys",
-                        "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO8intValueAESgSi_tcfc",
-                "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO8intValueAESgSi_tcfc",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:13LikeMindsChat6LMMetaV10CodingKeysO",
-            "mangledName": "$s13LikeMindsChat6LMMetaV10CodingKeysO",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "enumRawTypeName": "String",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CodingKey",
-                "printedName": "CodingKey",
-                "usr": "s:s9CodingKeyP",
-                "mangledName": "$ss9CodingKeyP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Sendable",
-                "printedName": "Sendable",
-                "usr": "s:s8SendableP",
-                "mangledName": "$ss8SendableP"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LMMeta",
-                "printedName": "LikeMindsChat.LMMeta",
-                "usr": "s:13LikeMindsChat6LMMetaV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13LikeMindsChat6LMMetaV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13LikeMindsChat6LMMetaV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "LikeMindsChat",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13LikeMindsChat6LMMetaV",
-        "mangledName": "$s13LikeMindsChat6LMMetaV",
         "moduleName": "LikeMindsChat",
         "declAttributes": [
           "AccessControl"
@@ -17247,6 +16645,23 @@
             "mangledName": "$sSe"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
       },
       {
         "kind": "Import",
@@ -28292,7 +27707,8 @@
             "mangledName": "$s13LikeMindsChat12LMChatClientC16postConversation7request8responseyAA04PostG7RequestC_yAA10LMResponseVyAA0jG8ResponseCGcSgtF",
             "moduleName": "LikeMindsChat",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -38168,6 +37584,158 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "widgets",
+            "printedName": "widgets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : LikeMindsChat.Widget]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : LikeMindsChat.Widget]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Widget",
+                        "printedName": "LikeMindsChat.Widget",
+                        "usr": "s:13LikeMindsChat6WidgetV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat24PostConversationResponseC7widgetsSDySSAA6WidgetVGSgvp",
+            "mangledName": "$s13LikeMindsChat24PostConversationResponseC7widgetsSDySSAA6WidgetVGSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : LikeMindsChat.Widget]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : LikeMindsChat.Widget]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Widget",
+                            "printedName": "LikeMindsChat.Widget",
+                            "usr": "s:13LikeMindsChat6WidgetV"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat24PostConversationResponseC7widgetsSDySSAA6WidgetVGSgvg",
+                "mangledName": "$s13LikeMindsChat24PostConversationResponseC7widgetsSDySSAA6WidgetVGSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : LikeMindsChat.Widget]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : LikeMindsChat.Widget]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Widget",
+                            "printedName": "LikeMindsChat.Widget",
+                            "usr": "s:13LikeMindsChat6WidgetV"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat24PostConversationResponseC7widgetsSDySSAA6WidgetVGSgvs",
+                "mangledName": "$s13LikeMindsChat24PostConversationResponseC7widgetsSDySSAA6WidgetVGSgvs",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat24PostConversationResponseC7widgetsSDySSAA6WidgetVGSgvM",
+                "mangledName": "$s13LikeMindsChat24PostConversationResponseC7widgetsSDySSAA6WidgetVGSgvM",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -43877,7 +43445,8 @@
             "declAttributes": [
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -43921,7 +43490,8 @@
             "declAttributes": [
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -44157,7 +43727,8 @@
               "HasInitialValue",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -44218,7 +43789,8 @@
               "HasInitialValue",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -44287,7 +43859,8 @@
               "HasInitialValue",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -44330,6 +43903,94 @@
           },
           {
             "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat23PostConversationRequestC8metadataSDySSypGSgvp",
+            "mangledName": "$s13LikeMindsChat23PostConversationRequestC8metadataSDySSypGSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat23PostConversationRequestC8metadataSDySSypGSgvg",
+                "mangledName": "$s13LikeMindsChat23PostConversationRequestC8metadataSDySSypGSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "temporaryId",
             "printedName": "temporaryId",
             "children": [
@@ -44356,7 +44017,8 @@
               "HasInitialValue",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -44417,7 +44079,8 @@
               "HasInitialValue",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -44449,6 +44112,64 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PostConversationRequest",
+                "printedName": "LikeMindsChat.PostConversationRequest",
+                "usr": "s:13LikeMindsChat23PostConversationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsChat23PostConversationRequestC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsChat23PostConversationRequestC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "Required",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsChat23PostConversationRequestC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LikeMindsChat23PostConversationRequestC6encode2toys7Encoder_p_tKF",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "TypeDecl",
@@ -44820,6 +44541,54 @@
               },
               {
                 "kind": "Function",
+                "name": "metadata",
+                "printedName": "metadata(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.PostConversationRequest.Builder",
+                    "usr": "s:13LikeMindsChat23PostConversationRequestC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat23PostConversationRequestC7BuilderC8metadatayAESDySSypGSgF",
+                "mangledName": "$s13LikeMindsChat23PostConversationRequestC7BuilderC8metadatayAESDySSypGSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
                 "name": "build",
                 "printedName": "build()",
                 "children": [
@@ -44845,7 +44614,8 @@
             "mangledName": "$s13LikeMindsChat23PostConversationRequestC7BuilderC",
             "moduleName": "LikeMindsChat",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "conformances": [
               {
@@ -44884,31 +44654,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13LikeMindsChat23PostConversationRequestC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s13LikeMindsChat23PostConversationRequestC6encode2toys7Encoder_p_tKF",
-            "moduleName": "LikeMindsChat",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -44916,7 +44661,8 @@
         "mangledName": "$s13LikeMindsChat23PostConversationRequestC",
         "moduleName": "LikeMindsChat",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -44933,6 +44679,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           },
           {
             "kind": "Conformance",
@@ -56668,6 +56421,111 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "widgetId",
+            "printedName": "widgetId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat12ConversationC8widgetIdSSvp",
+            "mangledName": "$s13LikeMindsChat12ConversationC8widgetIdSSvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat12ConversationC8widgetIdSSvg",
+                "mangledName": "$s13LikeMindsChat12ConversationC8widgetIdSSvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "widget",
+            "printedName": "widget",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LikeMindsChat.Widget?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Widget",
+                    "printedName": "LikeMindsChat.Widget",
+                    "usr": "s:13LikeMindsChat6WidgetV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat12ConversationC6widgetAA6WidgetVSgvp",
+            "mangledName": "$s13LikeMindsChat12ConversationC6widgetAA6WidgetVSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsChat.Widget?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Widget",
+                        "printedName": "LikeMindsChat.Widget",
+                        "usr": "s:13LikeMindsChat6WidgetV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat12ConversationC6widgetAA6WidgetVSgvg",
+                "mangledName": "$s13LikeMindsChat12ConversationC6widgetAA6WidgetVSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -58182,6 +58040,76 @@
                 "declKind": "Func",
                 "usr": "s:13LikeMindsChat12ConversationC7BuilderC18conversationStatusyAeA0dG0OSgF",
                 "mangledName": "$s13LikeMindsChat12ConversationC7BuilderC18conversationStatusyAeA0dG0OSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "widgetId",
+                "printedName": "widgetId(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Conversation.Builder",
+                    "usr": "s:13LikeMindsChat12ConversationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat12ConversationC7BuilderC8widgetIdyAESSSgF",
+                "mangledName": "$s13LikeMindsChat12ConversationC7BuilderC8widgetIdyAESSSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "widget",
+                "printedName": "widget(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Conversation.Builder",
+                    "usr": "s:13LikeMindsChat12ConversationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsChat.Widget?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Widget",
+                        "printedName": "LikeMindsChat.Widget",
+                        "usr": "s:13LikeMindsChat6WidgetV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat12ConversationC7BuilderC6widgetyAeA6WidgetVSgF",
+                "mangledName": "$s13LikeMindsChat12ConversationC7BuilderC6widgetyAeA6WidgetVSgF",
                 "moduleName": "LikeMindsChat",
                 "declAttributes": [
                   "AccessControl"
@@ -60810,590 +60738,6 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "LMWidget",
-        "printedName": "LMWidget",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat8LMWidgetV2idSSSgvp",
-            "mangledName": "$s13LikeMindsChat8LMWidgetV2idSSSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat8LMWidgetV2idSSSgvg",
-                "mangledName": "$s13LikeMindsChat8LMWidgetV2idSSSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "parentEntityID",
-            "printedName": "parentEntityID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat8LMWidgetV14parentEntityIDSSSgvp",
-            "mangledName": "$s13LikeMindsChat8LMWidgetV14parentEntityIDSSSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat8LMWidgetV14parentEntityIDSSSgvg",
-                "mangledName": "$s13LikeMindsChat8LMWidgetV14parentEntityIDSSSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "parentEntityType",
-            "printedName": "parentEntityType",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat8LMWidgetV16parentEntityTypeSSSgvp",
-            "mangledName": "$s13LikeMindsChat8LMWidgetV16parentEntityTypeSSSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat8LMWidgetV16parentEntityTypeSSSgvg",
-                "mangledName": "$s13LikeMindsChat8LMWidgetV16parentEntityTypeSSSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "metadata",
-            "printedName": "metadata",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat8LMWidgetV8metadataSDySSypGSgvp",
-            "mangledName": "$s13LikeMindsChat8LMWidgetV8metadataSDySSypGSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
-                          }
-                        ],
-                        "usr": "s:SD"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat8LMWidgetV8metadataSDySSypGSgvg",
-                "mangledName": "$s13LikeMindsChat8LMWidgetV8metadataSDySSypGSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "createdAt",
-            "printedName": "createdAt",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat8LMWidgetV9createdAtSdSgvp",
-            "mangledName": "$s13LikeMindsChat8LMWidgetV9createdAtSdSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat8LMWidgetV9createdAtSdSgvg",
-                "mangledName": "$s13LikeMindsChat8LMWidgetV9createdAtSdSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "updatedAt",
-            "printedName": "updatedAt",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat8LMWidgetV9updatedAtSdSgvp",
-            "mangledName": "$s13LikeMindsChat8LMWidgetV9updatedAtSdSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat8LMWidgetV9updatedAtSdSgvg",
-                "mangledName": "$s13LikeMindsChat8LMWidgetV9updatedAtSdSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "lmMeta",
-            "printedName": "lmMeta",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "LikeMindsChat.LMMeta?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LMMeta",
-                    "printedName": "LikeMindsChat.LMMeta",
-                    "usr": "s:13LikeMindsChat6LMMetaV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat8LMWidgetV6lmMetaAA6LMMetaVSgvp",
-            "mangledName": "$s13LikeMindsChat8LMWidgetV6lmMetaAA6LMMetaVSgvp",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LikeMindsChat.LMMeta?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LMMeta",
-                        "printedName": "LikeMindsChat.LMMeta",
-                        "usr": "s:13LikeMindsChat6LMMetaV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat8LMWidgetV6lmMetaAA6LMMetaVSgvg",
-                "mangledName": "$s13LikeMindsChat8LMWidgetV6lmMetaAA6LMMetaVSgvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LMWidget",
-                "printedName": "LikeMindsChat.LMWidget",
-                "usr": "s:13LikeMindsChat8LMWidgetV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13LikeMindsChat8LMWidgetV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13LikeMindsChat8LMWidgetV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "LikeMindsChat",
-            "isFromExtension": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13LikeMindsChat8LMWidgetV",
-        "mangledName": "$s13LikeMindsChat8LMWidgetV",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AnyDecodable",
-        "printedName": "AnyDecodable",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyDecodable",
-                "printedName": "LikeMindsChat.AnyDecodable",
-                "usr": "s:13LikeMindsChat12AnyDecodableV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13LikeMindsChat12AnyDecodableV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13LikeMindsChat12AnyDecodableV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "LikeMindsChat",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13LikeMindsChat12AnyDecodableV",
-        "mangledName": "$s13LikeMindsChat12AnyDecodableV",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
           }
         ]
       },
@@ -67685,6 +67029,1053 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Widget",
+        "printedName": "Widget",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat6WidgetV2idSSSgvp",
+            "mangledName": "$s13LikeMindsChat6WidgetV2idSSSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat6WidgetV2idSSSgvg",
+                "mangledName": "$s13LikeMindsChat6WidgetV2idSSSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parentEntityID",
+            "printedName": "parentEntityID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat6WidgetV14parentEntityIDSSSgvp",
+            "mangledName": "$s13LikeMindsChat6WidgetV14parentEntityIDSSSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat6WidgetV14parentEntityIDSSSgvg",
+                "mangledName": "$s13LikeMindsChat6WidgetV14parentEntityIDSSSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parentEntityType",
+            "printedName": "parentEntityType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat6WidgetV16parentEntityTypeSSSgvp",
+            "mangledName": "$s13LikeMindsChat6WidgetV16parentEntityTypeSSSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat6WidgetV16parentEntityTypeSSSgvg",
+                "mangledName": "$s13LikeMindsChat6WidgetV16parentEntityTypeSSSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat6WidgetV8metadataSDySSypGSgvp",
+            "mangledName": "$s13LikeMindsChat6WidgetV8metadataSDySSypGSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat6WidgetV8metadataSDySSypGSgvg",
+                "mangledName": "$s13LikeMindsChat6WidgetV8metadataSDySSypGSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "createdAt",
+            "printedName": "createdAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat6WidgetV9createdAtSdSgvp",
+            "mangledName": "$s13LikeMindsChat6WidgetV9createdAtSdSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat6WidgetV9createdAtSdSgvg",
+                "mangledName": "$s13LikeMindsChat6WidgetV9createdAtSdSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "updatedAt",
+            "printedName": "updatedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat6WidgetV9updatedAtSdSgvp",
+            "mangledName": "$s13LikeMindsChat6WidgetV9updatedAtSdSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat6WidgetV9updatedAtSdSgvg",
+                "mangledName": "$s13LikeMindsChat6WidgetV9updatedAtSdSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lmMeta",
+            "printedName": "lmMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat6WidgetV6lmMetaSDySSypGSgvp",
+            "mangledName": "$s13LikeMindsChat6WidgetV6lmMetaSDySSypGSgvp",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat6WidgetV6lmMetaSDySSypGSgvg",
+                "mangledName": "$s13LikeMindsChat6WidgetV6lmMetaSDySSypGSgvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Builder",
+            "printedName": "Builder",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Widget.Builder",
+                    "usr": "s:13LikeMindsChat6WidgetV7BuilderC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderCAEycfc",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderCAEycfc",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "id",
+                "printedName": "id(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Widget.Builder",
+                    "usr": "s:13LikeMindsChat6WidgetV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderC2idyAESSSgF",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC2idyAESSSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parentEntityID",
+                "printedName": "parentEntityID(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Widget.Builder",
+                    "usr": "s:13LikeMindsChat6WidgetV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderC14parentEntityIDyAESSSgF",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC14parentEntityIDyAESSSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parentEntityType",
+                "printedName": "parentEntityType(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Widget.Builder",
+                    "usr": "s:13LikeMindsChat6WidgetV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderC16parentEntityTypeyAESSSgF",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC16parentEntityTypeyAESSSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "metadata",
+                "printedName": "metadata(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Widget.Builder",
+                    "usr": "s:13LikeMindsChat6WidgetV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderC8metadatayAESDySSypGSgF",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC8metadatayAESDySSypGSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "createdAt",
+                "printedName": "createdAt(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Widget.Builder",
+                    "usr": "s:13LikeMindsChat6WidgetV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderC9createdAtyAESdSgF",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC9createdAtyAESdSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "updatedAt",
+                "printedName": "updatedAt(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Widget.Builder",
+                    "usr": "s:13LikeMindsChat6WidgetV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderC9updatedAtyAESdSgF",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC9updatedAtyAESdSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "lmMeta",
+                "printedName": "lmMeta(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "LikeMindsChat.Widget.Builder",
+                    "usr": "s:13LikeMindsChat6WidgetV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderC6lmMetayAESDySSypGSgF",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC6lmMetayAESDySSypGSgF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "build",
+                "printedName": "build()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Widget",
+                    "printedName": "LikeMindsChat.Widget",
+                    "usr": "s:13LikeMindsChat6WidgetV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsChat6WidgetV7BuilderC5buildACyF",
+                "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC5buildACyF",
+                "moduleName": "LikeMindsChat",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:13LikeMindsChat6WidgetV7BuilderC",
+            "mangledName": "$s13LikeMindsChat6WidgetV7BuilderC",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Widget",
+                "printedName": "LikeMindsChat.Widget",
+                "usr": "s:13LikeMindsChat6WidgetV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsChat6WidgetV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsChat6WidgetV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsChat6WidgetV",
+        "mangledName": "$s13LikeMindsChat6WidgetV",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnyDecodable",
+        "printedName": "AnyDecodable",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyDecodable",
+                "printedName": "LikeMindsChat.AnyDecodable",
+                "usr": "s:13LikeMindsChat12AnyDecodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsChat12AnyDecodableV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsChat12AnyDecodableV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsChat12AnyDecodableV",
+        "mangledName": "$s13LikeMindsChat12AnyDecodableV",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnyEncodable",
+        "printedName": "AnyEncodable",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyEncodable",
+                "printedName": "LikeMindsChat.AnyEncodable",
+                "usr": "s:13LikeMindsChat12AnyEncodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsChat12AnyEncodableVyACypcfc",
+            "mangledName": "$s13LikeMindsChat12AnyEncodableVyACypcfc",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsChat12AnyEncodableV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LikeMindsChat12AnyEncodableV6encode2toys7Encoder_p_tKF",
+            "moduleName": "LikeMindsChat",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsChat12AnyEncodableV",
+        "mangledName": "$s13LikeMindsChat12AnyEncodableV",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "AddPollOptionResponse",
         "printedName": "AddPollOptionResponse",
         "children": [
@@ -71714,56 +72105,56 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncConversationResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 642,
+      "offset": 677,
       "length": 15,
       "value": "\"chatroom_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncConversationResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 723,
       "length": 16,
       "value": "\"community_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncConversationResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 749,
+      "offset": 784,
       "length": 23,
       "value": "\"conv_attachments_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncConversationResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 845,
       "length": 17,
       "value": "\"conv_polls_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncConversationResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 858,
+      "offset": 893,
       "length": 20,
       "value": "\"conversations_data\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncConversationResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 904,
+      "offset": 939,
       "length": 11,
       "value": "\"user_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncConversationResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 954,
+      "offset": 989,
       "length": 25,
       "value": "\"chatroom_reactions_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncConversationResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 1022,
+      "offset": 1057,
       "length": 21,
       "value": "\"conv_reactions_meta\""
     },
@@ -72475,27 +72866,6 @@
       "value": "\"vote_count\""
     },
     {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMMeta.swift",
-      "kind": "StringLiteral",
-      "offset": 389,
-      "length": 18,
-      "value": "\"poll_answer_text\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMMeta.swift",
-      "kind": "StringLiteral",
-      "offset": 436,
-      "length": 17,
-      "value": "\"to_show_results\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMMeta.swift",
-      "kind": "StringLiteral",
-      "offset": 479,
-      "length": 14,
-      "value": "\"voters_count\""
-    },
-    {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Chatroom\/Request\/EditChatroomTitleRequest.swift",
       "kind": "StringLiteral",
       "offset": 515,
@@ -72914,6 +73284,13 @@
       "offset": 168,
       "length": 17,
       "value": "\"CommunityClient\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/WidgetRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 177,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/CoreFeed\/Logout\/LogoutRequest.swift",
@@ -74115,9 +74492,9 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Network\/TokenManager\/BuildManager.swift",
       "kind": "StringLiteral",
-      "offset": 351,
+      "offset": 350,
       "length": 5,
-      "value": "\"504\""
+      "value": "\"505\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Request\/SubmitPollRequest.swift",
@@ -74255,7 +74632,7 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/ROConverter.swift",
       "kind": "Array",
-      "offset": 2653,
+      "offset": 5031,
       "length": 2,
       "value": "[]"
     },
@@ -74514,49 +74891,49 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncChatroomResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 619,
+      "offset": 654,
       "length": 16,
       "value": "\"chatrooms_data\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncChatroomResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 666,
+      "offset": 701,
       "length": 16,
       "value": "\"community_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncChatroomResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 762,
       "length": 23,
       "value": "\"conv_attachments_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncChatroomResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 788,
+      "offset": 823,
       "length": 17,
       "value": "\"conv_polls_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncChatroomResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 839,
+      "offset": 874,
       "length": 19,
       "value": "\"conversation_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncChatroomResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 894,
+      "offset": 929,
       "length": 23,
       "value": "\"card_attachments_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_SyncChatroomResponse_.swift",
       "kind": "StringLiteral",
-      "offset": 943,
+      "offset": 978,
       "length": 11,
       "value": "\"user_meta\""
     },
@@ -74647,7 +75024,7 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4101,
+      "offset": 5809,
       "length": 4,
       "value": "true"
     },
@@ -75186,70 +75563,70 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 750,
+      "offset": 1656,
       "length": 13,
       "value": "\"chatroom_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 786,
+      "offset": 1692,
       "length": 9,
       "value": "\"og_tags\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 852,
+      "offset": 1768,
       "length": 12,
       "value": "\"share_link\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 1807,
       "length": 13,
       "value": "\"trigger_bot\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 932,
+      "offset": 1848,
       "length": 14,
       "value": "\"temporary_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 980,
+      "offset": 1896,
       "length": 21,
       "value": "\"replied_chatroom_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1039,
+      "offset": 1955,
       "length": 25,
       "value": "\"replied_conversation_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1099,
+      "offset": 2015,
       "length": 22,
       "value": "\"is_from_notification\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 8452,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PostConversationRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1910,
+      "offset": 8490,
       "length": 2,
       "value": "\"\""
     },
@@ -75298,217 +75675,224 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1401,
+      "offset": 1451,
       "length": 9,
       "value": "\"card_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1488,
       "length": 14,
       "value": "\"community_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1518,
+      "offset": 1555,
+      "length": 11,
+      "value": "\"widget_id\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
+      "kind": "StringLiteral",
+      "offset": 1612,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1599,
+      "offset": 1693,
       "length": 11,
       "value": "\"last_seen\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1633,
+      "offset": 1727,
       "length": 9,
       "value": "\"og_tags\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1685,
+      "offset": 1779,
       "length": 11,
       "value": "\"is_edited\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1721,
+      "offset": 1815,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1766,
+      "offset": 1860,
       "length": 10,
       "value": "\"reply_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1802,
+      "offset": 1896,
       "length": 20,
       "value": "\"deleted_by_user_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1851,
+      "offset": 1945,
       "length": 15,
       "value": "\"created_epoch\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1898,
+      "offset": 1992,
       "length": 18,
       "value": "\"attachment_count\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 1951,
+      "offset": 2045,
       "length": 22,
       "value": "\"attachments_uploaded\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2006,
+      "offset": 2100,
       "length": 20,
       "value": "\"upload_worker_uuid\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2054,
+      "offset": 2148,
       "length": 14,
       "value": "\"temporary_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2102,
+      "offset": 2196,
       "length": 21,
       "value": "\"local_created_epoch\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2174,
+      "offset": 2268,
       "length": 14,
       "value": "\"is_anonymous\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2219,
+      "offset": 2313,
       "length": 18,
       "value": "\"allow_add_option\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2262,
+      "offset": 2356,
       "length": 11,
       "value": "\"poll_type\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2302,
+      "offset": 2396,
       "length": 16,
       "value": "\"poll_type_text\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2349,
+      "offset": 2443,
       "length": 18,
       "value": "\"submit_type_text\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2394,
+      "offset": 2488,
       "length": 13,
       "value": "\"expiry_time\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2441,
+      "offset": 2535,
       "length": 20,
       "value": "\"multiple_select_no\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2497,
+      "offset": 2591,
       "length": 23,
       "value": "\"multiple_select_state\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2569,
+      "offset": 2663,
       "length": 17,
       "value": "\"to_show_results\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2617,
+      "offset": 2711,
       "length": 18,
       "value": "\"poll_answer_text\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2667,
+      "offset": 2761,
       "length": 19,
       "value": "\"reply_chatroom_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2711,
+      "offset": 2805,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2747,
+      "offset": 2841,
       "length": 11,
       "value": "\"has_files\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2787,
+      "offset": 2881,
       "length": 15,
       "value": "\"has_reactions\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2830,
+      "offset": 2924,
       "length": 14,
       "value": "\"last_updated\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/Internal\/SyncModel\/_Conversation_.swift",
       "kind": "StringLiteral",
-      "offset": 2876,
+      "offset": 2970,
       "length": 19,
       "value": "\"deleted_by_member\""
     },
@@ -76110,261 +76494,275 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2322,
+      "offset": 2411,
       "length": 13,
       "value": "\"chatroom_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2363,
+      "offset": 2452,
       "length": 14,
       "value": "\"community_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2443,
+      "offset": 2540,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2524,
+      "offset": 2621,
       "length": 11,
       "value": "\"last_seen\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2558,
+      "offset": 2655,
       "length": 9,
       "value": "\"og_tags\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2610,
+      "offset": 2707,
       "length": 11,
       "value": "\"is_edited\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2646,
+      "offset": 2743,
       "length": 11,
       "value": "\"member_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2693,
+      "offset": 2790,
       "length": 20,
       "value": "\"reply_conversation\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2739,
+      "offset": 2836,
       "length": 19,
       "value": "\"delete_by_user_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2787,
+      "offset": 2884,
       "length": 15,
       "value": "\"created_epoch\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2834,
+      "offset": 2931,
       "length": 18,
       "value": "\"attachment_count\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2887,
+      "offset": 2984,
       "length": 22,
       "value": "\"attachments_uploaded\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2942,
+      "offset": 3039,
       "length": 20,
       "value": "\"upload_worker_uuid\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 2990,
+      "offset": 3087,
       "length": 14,
       "value": "\"temporary_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3038,
+      "offset": 3135,
       "length": 21,
       "value": "\"local_created_epoch\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3110,
+      "offset": 3207,
       "length": 14,
       "value": "\"is_anonymous\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3155,
+      "offset": 3252,
       "length": 18,
       "value": "\"allow_add_option\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3198,
+      "offset": 3295,
       "length": 11,
       "value": "\"poll_type\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3238,
+      "offset": 3335,
       "length": 16,
       "value": "\"poll_type_text\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3285,
+      "offset": 3382,
       "length": 18,
       "value": "\"submit_type_text\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3330,
+      "offset": 3427,
       "length": 13,
       "value": "\"expiry_time\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3377,
+      "offset": 3474,
       "length": 20,
       "value": "\"multiple_select_no\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3433,
+      "offset": 3530,
       "length": 23,
       "value": "\"multiple_select_state\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3505,
+      "offset": 3602,
       "length": 17,
       "value": "\"to_show_results\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3553,
+      "offset": 3650,
       "length": 18,
       "value": "\"poll_answer_text\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3603,
+      "offset": 3700,
       "length": 19,
       "value": "\"reply_chatroom_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3647,
+      "offset": 3744,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3683,
+      "offset": 3780,
       "length": 11,
       "value": "\"has_files\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3723,
+      "offset": 3820,
       "length": 15,
       "value": "\"has_reactions\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3766,
+      "offset": 3863,
       "length": 14,
       "value": "\"last_updated\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3812,
+      "offset": 3909,
       "length": 19,
       "value": "\"deleted_by_member\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3865,
+      "offset": 3962,
       "length": 26,
       "value": "\"reply_conversation_model\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 3926,
+      "offset": 4023,
       "length": 21,
       "value": "\"conversation_status\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 10604,
+      "offset": 4069,
+      "length": 11,
+      "value": "\"widget_id\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
+      "kind": "StringLiteral",
+      "offset": 11021,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "StringLiteral",
-      "offset": 10779,
+      "offset": 11196,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "BooleanLiteral",
-      "offset": 12300,
+      "offset": 12717,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
       "kind": "BooleanLiteral",
-      "offset": 12348,
+      "offset": 12765,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Response\/Conversation.swift",
+      "kind": "StringLiteral",
+      "offset": 12965,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Chatroom\/Request\/GetChatroomActionsRequest.swift",
@@ -76575,48 +76973,6 @@
       "offset": 851,
       "length": 11,
       "value": "\"page_size\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMWidget.swift",
-      "kind": "StringLiteral",
-      "offset": 457,
-      "length": 5,
-      "value": "\"_id\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMWidget.swift",
-      "kind": "StringLiteral",
-      "offset": 488,
-      "length": 12,
-      "value": "\"created_at\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMWidget.swift",
-      "kind": "StringLiteral",
-      "offset": 553,
-      "length": 18,
-      "value": "\"parent_entity_id\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMWidget.swift",
-      "kind": "StringLiteral",
-      "offset": 604,
-      "length": 20,
-      "value": "\"parent_entity_type\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMWidget.swift",
-      "kind": "StringLiteral",
-      "offset": 650,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/LMWidget.swift",
-      "kind": "StringLiteral",
-      "offset": 685,
-      "length": 10,
-      "value": "\"_lm_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/CoreFeed\/InitiateUser\/UserRole.swift",
@@ -77226,6 +77582,48 @@
       "offset": 2593,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/Widget.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/Widget.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/Widget.swift",
+      "kind": "StringLiteral",
+      "offset": 552,
+      "length": 18,
+      "value": "\"parent_entity_id\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/Widget.swift",
+      "kind": "StringLiteral",
+      "offset": 603,
+      "length": 20,
+      "value": "\"parent_entity_type\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/Widget.swift",
+      "kind": "StringLiteral",
+      "offset": 649,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Poll\/Response\/Widget.swift",
+      "kind": "StringLiteral",
+      "offset": 684,
+      "length": 10,
+      "value": "\"_lm_meta\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/DirectMessage\/Response\/CheckDMStatusResponse.swift",

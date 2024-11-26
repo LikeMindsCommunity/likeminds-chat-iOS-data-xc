@@ -362,6 +362,7 @@ public struct NoData : Swift.Decodable {
 public struct GetConversationsResponse : Swift.Decodable {
   public var conversations: [LikeMindsChat.Conversation]?
   public var count: Swift.Int?
+  public var widgets: [Swift.String : LikeMindsChat.Widget]?
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Attachment : Swift.Codable {
@@ -438,34 +439,9 @@ public struct PollOption : Swift.Decodable {
   public let percentage: Swift.Double
   public let uuid: Swift.String?
   public let voteCount: Swift.Int
+  public func toDictionary() -> [Swift.String : Any]
 }
 extension LikeMindsChat.PollOption {
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct LMMeta : Swift.Decodable {
-  public let options: [LikeMindsChat.PollOption]
-  public let pollAnswerText: Swift.String?
-  public let isShowResult: Swift.Bool?
-  public let voteCount: Swift.Int?
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case options
-    case pollAnswerText
-    case isShowResult
-    case voteCount
-    public init?(rawValue: Swift.String)
-    public init?(stringValue: Swift.String)
-    public init?(intValue: Swift.Int)
-    public typealias RawValue = Swift.String
-    public var intValue: Swift.Int? {
-      get
-    }
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
   public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class EditChatroomTitleRequest : Swift.Encodable {
@@ -1199,6 +1175,7 @@ public struct Member : Swift.Decodable {
 public class PostConversationResponse : Swift.Decodable {
   public var conversation: LikeMindsChat.Conversation?
   public var id: Swift.String?
+  public var widgets: [Swift.String : LikeMindsChat.Widget]?
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
@@ -1452,7 +1429,7 @@ public struct ManagerRight : Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@_hasMissingDesignatedInitializers public class PostConversationRequest : Swift.Encodable {
+@_hasMissingDesignatedInitializers public class PostConversationRequest : Swift.Codable {
   public var chatroomId: Swift.String {
     get
   }
@@ -1477,12 +1454,17 @@ public struct ManagerRight : Swift.Codable {
   public var attachments: [LikeMindsChat.Attachment]? {
     get
   }
+  public var metadata: [Swift.String : Any]? {
+    get
+  }
   public var temporaryId: Swift.String? {
     get
   }
   public var repliedChatroomId: Swift.String? {
     get
   }
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public class Builder {
     public init()
     public func chatroomId(_ chatroomId: Swift.String) -> LikeMindsChat.PostConversationRequest.Builder
@@ -1495,12 +1477,12 @@ public struct ManagerRight : Swift.Codable {
     public func repliedChatroomId(_ repliedChatroomId: Swift.String?) -> LikeMindsChat.PostConversationRequest.Builder
     public func attachments(_ attachments: [LikeMindsChat.Attachment]?) -> LikeMindsChat.PostConversationRequest.Builder
     public func triggerBot(_ triggerBot: Swift.Bool?) -> LikeMindsChat.PostConversationRequest.Builder
+    public func metadata(_ metadata: [Swift.String : Any]?) -> LikeMindsChat.PostConversationRequest.Builder
     public func build() -> LikeMindsChat.PostConversationRequest
     @objc deinit
   }
   public func toBuilder() -> LikeMindsChat.PostConversationRequest.Builder
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
 }
 public protocol ConversationChangeDelegate : AnyObject {
   func getPostedConversations(conversations: [LikeMindsChat.Conversation]?)
@@ -1919,6 +1901,12 @@ public struct ShowDirectMessageModel : Swift.Decodable {
   public var conversationStatus: LikeMindsChat.ConversationStatus? {
     get
   }
+  public var widgetId: Swift.String {
+    get
+  }
+  public var widget: LikeMindsChat.Widget? {
+    get
+  }
   required public init(from decoder: any Swift.Decoder) throws
   public static func builder() -> LikeMindsChat.Conversation.Builder
   public class Builder {
@@ -1964,6 +1952,8 @@ public struct ShowDirectMessageModel : Swift.Decodable {
     public func lastUpdated(_ lastUpdated: Swift.Int?) -> LikeMindsChat.Conversation.Builder
     public func deletedByMember(_ deletedByMember: LikeMindsChat.Member?) -> LikeMindsChat.Conversation.Builder
     public func conversationStatus(_ conversationStatus: LikeMindsChat.ConversationStatus?) -> LikeMindsChat.Conversation.Builder
+    public func widgetId(_ widgetId: Swift.String?) -> LikeMindsChat.Conversation.Builder
+    public func widget(_ widget: LikeMindsChat.Widget?) -> LikeMindsChat.Conversation.Builder
     public func build() -> LikeMindsChat.Conversation
     @objc deinit
   }
@@ -2064,21 +2054,6 @@ public struct DeleteConversationsResponse : Swift.Decodable {
   public func maxTimestamp(_ maxTimestamp: Swift.Int) -> LikeMindsChat.ConversationSyncRequest
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct LMWidget : Swift.Decodable {
-  public let id: Swift.String?
-  public let parentEntityID: Swift.String?
-  public let parentEntityType: Swift.String?
-  public let metadata: [Swift.String : Any]?
-  public let createdAt: Swift.Double?
-  public let updatedAt: Swift.Double?
-  public let lmMeta: LikeMindsChat.LMMeta?
-}
-extension LikeMindsChat.LMWidget {
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct AnyDecodable : Swift.Decodable {
-  public init(from decoder: any Swift.Decoder) throws
 }
 public enum UserRole : Swift.String, Swift.Codable {
   case chatbot
@@ -2242,6 +2217,37 @@ public struct User : Swift.Codable {
   }
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public struct Widget : Swift.Decodable {
+  public let id: Swift.String?
+  public let parentEntityID: Swift.String?
+  public let parentEntityType: Swift.String?
+  public let metadata: [Swift.String : Any]?
+  public let createdAt: Swift.Double?
+  public let updatedAt: Swift.Double?
+  public let lmMeta: [Swift.String : Any]?
+  public class Builder {
+    public init()
+    public func id(_ id: Swift.String?) -> LikeMindsChat.Widget.Builder
+    public func parentEntityID(_ parentEntityID: Swift.String?) -> LikeMindsChat.Widget.Builder
+    public func parentEntityType(_ parentEntityType: Swift.String?) -> LikeMindsChat.Widget.Builder
+    public func metadata(_ metadata: [Swift.String : Any]?) -> LikeMindsChat.Widget.Builder
+    public func createdAt(_ createdAt: Swift.Double?) -> LikeMindsChat.Widget.Builder
+    public func updatedAt(_ updatedAt: Swift.Double?) -> LikeMindsChat.Widget.Builder
+    public func lmMeta(_ lmMeta: [Swift.String : Any]?) -> LikeMindsChat.Widget.Builder
+    public func build() -> LikeMindsChat.Widget
+    @objc deinit
+  }
+}
+extension LikeMindsChat.Widget {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AnyDecodable : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AnyEncodable : Swift.Encodable {
+  public init(_ value: Any)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public struct AddPollOptionResponse : Swift.Decodable {
   public var poll: LikeMindsChat.Poll
   public init(from decoder: any Swift.Decoder) throws
@@ -2340,9 +2346,6 @@ public struct ChatroomAction : Swift.Decodable {
   public func toBuilder() -> LikeMindsChat.ShareChatroomUrlRequest.Builder
   @objc deinit
 }
-extension LikeMindsChat.LMMeta.CodingKeys : Swift.Equatable {}
-extension LikeMindsChat.LMMeta.CodingKeys : Swift.Hashable {}
-extension LikeMindsChat.LMMeta.CodingKeys : Swift.RawRepresentable {}
 extension LikeMindsChat.BlockMemberRequest.BlockState : Swift.Equatable {}
 extension LikeMindsChat.BlockMemberRequest.BlockState : Swift.Hashable {}
 extension LikeMindsChat.BlockMemberRequest.BlockState : Swift.RawRepresentable {}

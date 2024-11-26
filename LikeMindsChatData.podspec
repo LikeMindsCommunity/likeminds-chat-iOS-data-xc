@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
     spec.name         = "LikeMindsChatData"
     spec.summary      = "Data Layer for LikeMindsChatData"
     spec.homepage     = 'https://likeminds.community/'
-    spec.version      = "1.4.0"
+    spec.version      = "1.5.0"
     spec.license      = { :type => 'MIT', :file => 'LICENSE' }
     spec.authors      = { 'pushpendrasingh' => 'pushpendra.singh@likeminds.community' }
     spec.source       = { :git => "https://github.com/LikeMindsCommunity/likeminds-chat-iOS-data-xc.git", :tag => spec.version }
