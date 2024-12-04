@@ -431,479 +431,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ConversationStatus",
-        "printedName": "ConversationStatus",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "sending",
-            "printedName": "sending",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(LikeMindsChat.ConversationStatus.Type) -> LikeMindsChat.ConversationStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ConversationStatus",
-                    "printedName": "LikeMindsChat.ConversationStatus",
-                    "usr": "s:13LikeMindsChat18ConversationStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "LikeMindsChat.ConversationStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ConversationStatus",
-                        "printedName": "LikeMindsChat.ConversationStatus",
-                        "usr": "s:13LikeMindsChat18ConversationStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13LikeMindsChat18ConversationStatusO7sendingyA2CmF",
-            "mangledName": "$s13LikeMindsChat18ConversationStatusO7sendingyA2CmF",
-            "moduleName": "LikeMindsChat"
-          },
-          {
-            "kind": "Var",
-            "name": "sent",
-            "printedName": "sent",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(LikeMindsChat.ConversationStatus.Type) -> LikeMindsChat.ConversationStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ConversationStatus",
-                    "printedName": "LikeMindsChat.ConversationStatus",
-                    "usr": "s:13LikeMindsChat18ConversationStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "LikeMindsChat.ConversationStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ConversationStatus",
-                        "printedName": "LikeMindsChat.ConversationStatus",
-                        "usr": "s:13LikeMindsChat18ConversationStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13LikeMindsChat18ConversationStatusO4sentyA2CmF",
-            "mangledName": "$s13LikeMindsChat18ConversationStatusO4sentyA2CmF",
-            "moduleName": "LikeMindsChat"
-          },
-          {
-            "kind": "Var",
-            "name": "failed",
-            "printedName": "failed",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(LikeMindsChat.ConversationStatus.Type) -> LikeMindsChat.ConversationStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ConversationStatus",
-                    "printedName": "LikeMindsChat.ConversationStatus",
-                    "usr": "s:13LikeMindsChat18ConversationStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "LikeMindsChat.ConversationStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ConversationStatus",
-                        "printedName": "LikeMindsChat.ConversationStatus",
-                        "usr": "s:13LikeMindsChat18ConversationStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13LikeMindsChat18ConversationStatusO6failedyA2CmF",
-            "mangledName": "$s13LikeMindsChat18ConversationStatusO6failedyA2CmF",
-            "moduleName": "LikeMindsChat"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "LikeMindsChat.ConversationStatus?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ConversationStatus",
-                    "printedName": "LikeMindsChat.ConversationStatus",
-                    "usr": "s:13LikeMindsChat18ConversationStatusO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13LikeMindsChat18ConversationStatusO8rawValueACSgSS_tcfc",
-            "mangledName": "$s13LikeMindsChat18ConversationStatusO8rawValueACSgSS_tcfc",
-            "moduleName": "LikeMindsChat",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat18ConversationStatusO8rawValueSSvp",
-            "mangledName": "$s13LikeMindsChat18ConversationStatusO8rawValueSSvp",
-            "moduleName": "LikeMindsChat",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat18ConversationStatusO8rawValueSSvg",
-                "mangledName": "$s13LikeMindsChat18ConversationStatusO8rawValueSSvg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "allCases",
-            "printedName": "allCases",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[LikeMindsChat.ConversationStatus]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ConversationStatus",
-                    "printedName": "LikeMindsChat.ConversationStatus",
-                    "usr": "s:13LikeMindsChat18ConversationStatusO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat18ConversationStatusO8allCasesSayACGvpZ",
-            "mangledName": "$s13LikeMindsChat18ConversationStatusO8allCasesSayACGvpZ",
-            "moduleName": "LikeMindsChat",
-            "static": true,
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[LikeMindsChat.ConversationStatus]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ConversationStatus",
-                        "printedName": "LikeMindsChat.ConversationStatus",
-                        "usr": "s:13LikeMindsChat18ConversationStatusO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat18ConversationStatusO8allCasesSayACGvgZ",
-                "mangledName": "$s13LikeMindsChat18ConversationStatusO8allCasesSayACGvgZ",
-                "moduleName": "LikeMindsChat",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:13LikeMindsChat18ConversationStatusO",
-        "mangledName": "$s13LikeMindsChat18ConversationStatusO",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "PersistableEnum",
-            "printedName": "PersistableEnum",
-            "usr": "s:10RealmSwift15PersistableEnumP",
-            "mangledName": "$s10RealmSwift15PersistableEnumP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_PersistableInsideOptional",
-            "printedName": "_PersistableInsideOptional",
-            "usr": "s:10RealmSwift26_PersistableInsideOptionalP",
-            "mangledName": "$s10RealmSwift26_PersistableInsideOptionalP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[LikeMindsChat.ConversationStatus]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ConversationStatus",
-                        "printedName": "LikeMindsChat.ConversationStatus",
-                        "usr": "s:13LikeMindsChat18ConversationStatusO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RealmEnum",
-            "printedName": "RealmEnum",
-            "usr": "s:10RealmSwift0A4EnumP",
-            "mangledName": "$s10RealmSwift0A4EnumP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_RealmCollectionValueInsideOptional",
-            "printedName": "_RealmCollectionValueInsideOptional",
-            "usr": "s:10RealmSwift01_A29CollectionValueInsideOptionalP",
-            "mangledName": "$s10RealmSwift01_A29CollectionValueInsideOptionalP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MinMaxType",
-            "printedName": "MinMaxType",
-            "usr": "s:10RealmSwift10MinMaxTypeP",
-            "mangledName": "$s10RealmSwift10MinMaxTypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Comparable",
-            "printedName": "Comparable",
-            "usr": "s:SL",
-            "mangledName": "$sSL"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_Persistable",
-            "printedName": "_Persistable",
-            "usr": "s:10RealmSwift12_PersistableP",
-            "mangledName": "$s10RealmSwift12_PersistableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RealmOptionalType",
-            "printedName": "RealmOptionalType",
-            "usr": "s:10RealmSwift0A12OptionalTypeP",
-            "mangledName": "$s10RealmSwift0A12OptionalTypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_RealmSchemaDiscoverable",
-            "printedName": "_RealmSchemaDiscoverable",
-            "usr": "s:10RealmSwift01_A18SchemaDiscoverableP",
-            "mangledName": "$s10RealmSwift01_A18SchemaDiscoverableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RealmCollectionValue",
-            "printedName": "RealmCollectionValue",
-            "usr": "s:10RealmSwift0A15CollectionValueP",
-            "mangledName": "$s10RealmSwift0A15CollectionValueP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_HasPersistedType",
-            "printedName": "_HasPersistedType",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "PersistedType",
-                "printedName": "PersistedType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10RealmSwift17_HasPersistedTypeP",
-            "mangledName": "$s10RealmSwift17_HasPersistedTypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjcBridgeable",
-            "printedName": "_ObjcBridgeable",
-            "usr": "s:10RealmSwift15_ObjcBridgeableP",
-            "mangledName": "$s10RealmSwift15_ObjcBridgeableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "DeleteReactionRequest",
         "printedName": "DeleteReactionRequest",
@@ -15797,304 +15324,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "RealmDatabaseAction",
-        "printedName": "RealmDatabaseAction",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "add",
-            "printedName": "add",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(LikeMindsChat.RealmDatabaseAction.Type) -> LikeMindsChat.RealmDatabaseAction",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RealmDatabaseAction",
-                    "printedName": "LikeMindsChat.RealmDatabaseAction",
-                    "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "LikeMindsChat.RealmDatabaseAction.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RealmDatabaseAction",
-                        "printedName": "LikeMindsChat.RealmDatabaseAction",
-                        "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13LikeMindsChat19RealmDatabaseActionO3addyA2CmF",
-            "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO3addyA2CmF",
-            "moduleName": "LikeMindsChat"
-          },
-          {
-            "kind": "Var",
-            "name": "insert",
-            "printedName": "insert",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(LikeMindsChat.RealmDatabaseAction.Type) -> LikeMindsChat.RealmDatabaseAction",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RealmDatabaseAction",
-                    "printedName": "LikeMindsChat.RealmDatabaseAction",
-                    "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "LikeMindsChat.RealmDatabaseAction.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RealmDatabaseAction",
-                        "printedName": "LikeMindsChat.RealmDatabaseAction",
-                        "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13LikeMindsChat19RealmDatabaseActionO6insertyA2CmF",
-            "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO6insertyA2CmF",
-            "moduleName": "LikeMindsChat"
-          },
-          {
-            "kind": "Var",
-            "name": "update",
-            "printedName": "update",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(LikeMindsChat.RealmDatabaseAction.Type) -> LikeMindsChat.RealmDatabaseAction",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RealmDatabaseAction",
-                    "printedName": "LikeMindsChat.RealmDatabaseAction",
-                    "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "LikeMindsChat.RealmDatabaseAction.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RealmDatabaseAction",
-                        "printedName": "LikeMindsChat.RealmDatabaseAction",
-                        "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13LikeMindsChat19RealmDatabaseActionO6updateyA2CmF",
-            "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO6updateyA2CmF",
-            "moduleName": "LikeMindsChat"
-          },
-          {
-            "kind": "Var",
-            "name": "remove",
-            "printedName": "remove",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(LikeMindsChat.RealmDatabaseAction.Type) -> LikeMindsChat.RealmDatabaseAction",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RealmDatabaseAction",
-                    "printedName": "LikeMindsChat.RealmDatabaseAction",
-                    "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "LikeMindsChat.RealmDatabaseAction.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RealmDatabaseAction",
-                        "printedName": "LikeMindsChat.RealmDatabaseAction",
-                        "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13LikeMindsChat19RealmDatabaseActionO6removeyA2CmF",
-            "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO6removeyA2CmF",
-            "moduleName": "LikeMindsChat"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RealmDatabaseAction",
-                "printedName": "LikeMindsChat.RealmDatabaseAction",
-                "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RealmDatabaseAction",
-                "printedName": "LikeMindsChat.RealmDatabaseAction",
-                "usr": "s:13LikeMindsChat19RealmDatabaseActionO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13LikeMindsChat19RealmDatabaseActionO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO2eeoiySbAC_ACtFZ",
-            "moduleName": "LikeMindsChat",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsChat19RealmDatabaseActionO9hashValueSivp",
-            "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO9hashValueSivp",
-            "moduleName": "LikeMindsChat",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsChat19RealmDatabaseActionO9hashValueSivg",
-                "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO9hashValueSivg",
-                "moduleName": "LikeMindsChat",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13LikeMindsChat19RealmDatabaseActionO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO4hash4intoys6HasherVz_tF",
-            "moduleName": "LikeMindsChat",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:13LikeMindsChat19RealmDatabaseActionO",
-        "mangledName": "$s13LikeMindsChat19RealmDatabaseActionO",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "EditConversationRequest",
         "printedName": "EditConversationRequest",
         "children": [
@@ -16657,23 +15886,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "LogoutRequest",
         "printedName": "LogoutRequest",
@@ -16933,6 +16145,321 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LMDatabaseAction",
+        "printedName": "LMDatabaseAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "add",
+            "printedName": "add",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LikeMindsChat.LMDatabaseAction.Type) -> LikeMindsChat.LMDatabaseAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LMDatabaseAction",
+                    "printedName": "LikeMindsChat.LMDatabaseAction",
+                    "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LikeMindsChat.LMDatabaseAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMDatabaseAction",
+                        "printedName": "LikeMindsChat.LMDatabaseAction",
+                        "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13LikeMindsChat16LMDatabaseActionO3addyA2CmF",
+            "mangledName": "$s13LikeMindsChat16LMDatabaseActionO3addyA2CmF",
+            "moduleName": "LikeMindsChat"
+          },
+          {
+            "kind": "Var",
+            "name": "insert",
+            "printedName": "insert",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LikeMindsChat.LMDatabaseAction.Type) -> LikeMindsChat.LMDatabaseAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LMDatabaseAction",
+                    "printedName": "LikeMindsChat.LMDatabaseAction",
+                    "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LikeMindsChat.LMDatabaseAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMDatabaseAction",
+                        "printedName": "LikeMindsChat.LMDatabaseAction",
+                        "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13LikeMindsChat16LMDatabaseActionO6insertyA2CmF",
+            "mangledName": "$s13LikeMindsChat16LMDatabaseActionO6insertyA2CmF",
+            "moduleName": "LikeMindsChat"
+          },
+          {
+            "kind": "Var",
+            "name": "update",
+            "printedName": "update",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LikeMindsChat.LMDatabaseAction.Type) -> LikeMindsChat.LMDatabaseAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LMDatabaseAction",
+                    "printedName": "LikeMindsChat.LMDatabaseAction",
+                    "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LikeMindsChat.LMDatabaseAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMDatabaseAction",
+                        "printedName": "LikeMindsChat.LMDatabaseAction",
+                        "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13LikeMindsChat16LMDatabaseActionO6updateyA2CmF",
+            "mangledName": "$s13LikeMindsChat16LMDatabaseActionO6updateyA2CmF",
+            "moduleName": "LikeMindsChat"
+          },
+          {
+            "kind": "Var",
+            "name": "remove",
+            "printedName": "remove",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LikeMindsChat.LMDatabaseAction.Type) -> LikeMindsChat.LMDatabaseAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LMDatabaseAction",
+                    "printedName": "LikeMindsChat.LMDatabaseAction",
+                    "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LikeMindsChat.LMDatabaseAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMDatabaseAction",
+                        "printedName": "LikeMindsChat.LMDatabaseAction",
+                        "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13LikeMindsChat16LMDatabaseActionO6removeyA2CmF",
+            "mangledName": "$s13LikeMindsChat16LMDatabaseActionO6removeyA2CmF",
+            "moduleName": "LikeMindsChat"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LMDatabaseAction",
+                "printedName": "LikeMindsChat.LMDatabaseAction",
+                "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LMDatabaseAction",
+                "printedName": "LikeMindsChat.LMDatabaseAction",
+                "usr": "s:13LikeMindsChat16LMDatabaseActionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsChat16LMDatabaseActionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s13LikeMindsChat16LMDatabaseActionO2eeoiySbAC_ACtFZ",
+            "moduleName": "LikeMindsChat",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat16LMDatabaseActionO9hashValueSivp",
+            "mangledName": "$s13LikeMindsChat16LMDatabaseActionO9hashValueSivp",
+            "moduleName": "LikeMindsChat",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat16LMDatabaseActionO9hashValueSivg",
+                "mangledName": "$s13LikeMindsChat16LMDatabaseActionO9hashValueSivg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsChat16LMDatabaseActionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s13LikeMindsChat16LMDatabaseActionO4hash4intoys6HasherVz_tF",
+            "moduleName": "LikeMindsChat",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13LikeMindsChat16LMDatabaseActionO",
+        "mangledName": "$s13LikeMindsChat16LMDatabaseActionO",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "GetHomeFeedResponse",
         "printedName": "GetHomeFeedResponse",
@@ -16994,6 +16521,683 @@
             "mangledName": "$sSe"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConversationStatus",
+        "printedName": "ConversationStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sending",
+            "printedName": "sending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LikeMindsChat.ConversationStatus.Type) -> LikeMindsChat.ConversationStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConversationStatus",
+                    "printedName": "LikeMindsChat.ConversationStatus",
+                    "usr": "s:13LikeMindsChat18ConversationStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LikeMindsChat.ConversationStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConversationStatus",
+                        "printedName": "LikeMindsChat.ConversationStatus",
+                        "usr": "s:13LikeMindsChat18ConversationStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13LikeMindsChat18ConversationStatusO7sendingyA2CmF",
+            "mangledName": "$s13LikeMindsChat18ConversationStatusO7sendingyA2CmF",
+            "moduleName": "LikeMindsChat"
+          },
+          {
+            "kind": "Var",
+            "name": "sent",
+            "printedName": "sent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LikeMindsChat.ConversationStatus.Type) -> LikeMindsChat.ConversationStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConversationStatus",
+                    "printedName": "LikeMindsChat.ConversationStatus",
+                    "usr": "s:13LikeMindsChat18ConversationStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LikeMindsChat.ConversationStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConversationStatus",
+                        "printedName": "LikeMindsChat.ConversationStatus",
+                        "usr": "s:13LikeMindsChat18ConversationStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13LikeMindsChat18ConversationStatusO4sentyA2CmF",
+            "mangledName": "$s13LikeMindsChat18ConversationStatusO4sentyA2CmF",
+            "moduleName": "LikeMindsChat"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LikeMindsChat.ConversationStatus.Type) -> LikeMindsChat.ConversationStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConversationStatus",
+                    "printedName": "LikeMindsChat.ConversationStatus",
+                    "usr": "s:13LikeMindsChat18ConversationStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LikeMindsChat.ConversationStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConversationStatus",
+                        "printedName": "LikeMindsChat.ConversationStatus",
+                        "usr": "s:13LikeMindsChat18ConversationStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13LikeMindsChat18ConversationStatusO6failedyA2CmF",
+            "mangledName": "$s13LikeMindsChat18ConversationStatusO6failedyA2CmF",
+            "moduleName": "LikeMindsChat"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LikeMindsChat.ConversationStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConversationStatus",
+                    "printedName": "LikeMindsChat.ConversationStatus",
+                    "usr": "s:13LikeMindsChat18ConversationStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsChat18ConversationStatusO8rawValueACSgSS_tcfc",
+            "mangledName": "$s13LikeMindsChat18ConversationStatusO8rawValueACSgSS_tcfc",
+            "moduleName": "LikeMindsChat",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat18ConversationStatusO8rawValueSSvp",
+            "mangledName": "$s13LikeMindsChat18ConversationStatusO8rawValueSSvp",
+            "moduleName": "LikeMindsChat",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat18ConversationStatusO8rawValueSSvg",
+                "mangledName": "$s13LikeMindsChat18ConversationStatusO8rawValueSSvg",
+                "moduleName": "LikeMindsChat",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[LikeMindsChat.ConversationStatus]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConversationStatus",
+                    "printedName": "LikeMindsChat.ConversationStatus",
+                    "usr": "s:13LikeMindsChat18ConversationStatusO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsChat18ConversationStatusO8allCasesSayACGvpZ",
+            "mangledName": "$s13LikeMindsChat18ConversationStatusO8allCasesSayACGvpZ",
+            "moduleName": "LikeMindsChat",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LikeMindsChat.ConversationStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConversationStatus",
+                        "printedName": "LikeMindsChat.ConversationStatus",
+                        "usr": "s:13LikeMindsChat18ConversationStatusO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsChat18ConversationStatusO8allCasesSayACGvgZ",
+                "mangledName": "$s13LikeMindsChat18ConversationStatusO8allCasesSayACGvgZ",
+                "moduleName": "LikeMindsChat",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13LikeMindsChat18ConversationStatusO",
+        "mangledName": "$s13LikeMindsChat18ConversationStatusO",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PersistableEnum",
+            "printedName": "PersistableEnum",
+            "usr": "s:10RealmSwift15PersistableEnumP",
+            "mangledName": "$s10RealmSwift15PersistableEnumP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_PersistableInsideOptional",
+            "printedName": "_PersistableInsideOptional",
+            "usr": "s:10RealmSwift26_PersistableInsideOptionalP",
+            "mangledName": "$s10RealmSwift26_PersistableInsideOptionalP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LikeMindsChat.ConversationStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConversationStatus",
+                        "printedName": "LikeMindsChat.ConversationStatus",
+                        "usr": "s:13LikeMindsChat18ConversationStatusO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RealmEnum",
+            "printedName": "RealmEnum",
+            "usr": "s:10RealmSwift0A4EnumP",
+            "mangledName": "$s10RealmSwift0A4EnumP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_RealmCollectionValueInsideOptional",
+            "printedName": "_RealmCollectionValueInsideOptional",
+            "usr": "s:10RealmSwift01_A29CollectionValueInsideOptionalP",
+            "mangledName": "$s10RealmSwift01_A29CollectionValueInsideOptionalP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MinMaxType",
+            "printedName": "MinMaxType",
+            "usr": "s:10RealmSwift10MinMaxTypeP",
+            "mangledName": "$s10RealmSwift10MinMaxTypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_Persistable",
+            "printedName": "_Persistable",
+            "usr": "s:10RealmSwift12_PersistableP",
+            "mangledName": "$s10RealmSwift12_PersistableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RealmOptionalType",
+            "printedName": "RealmOptionalType",
+            "usr": "s:10RealmSwift0A12OptionalTypeP",
+            "mangledName": "$s10RealmSwift0A12OptionalTypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_RealmSchemaDiscoverable",
+            "printedName": "_RealmSchemaDiscoverable",
+            "usr": "s:10RealmSwift01_A18SchemaDiscoverableP",
+            "mangledName": "$s10RealmSwift01_A18SchemaDiscoverableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RealmCollectionValue",
+            "printedName": "RealmCollectionValue",
+            "usr": "s:10RealmSwift0A15CollectionValueP",
+            "mangledName": "$s10RealmSwift0A15CollectionValueP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasPersistedType",
+            "printedName": "_HasPersistedType",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "PersistedType",
+                "printedName": "PersistedType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10RealmSwift17_HasPersistedTypeP",
+            "mangledName": "$s10RealmSwift17_HasPersistedTypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjcBridgeable",
+            "printedName": "_ObjcBridgeable",
+            "usr": "s:10RealmSwift15_ObjcBridgeableP",
+            "mangledName": "$s10RealmSwift15_ObjcBridgeableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "LikeMindsChat"
       },
       {
         "kind": "Import",
@@ -22352,23 +22556,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "GetExploreFeedRequest",
         "printedName": "GetExploreFeedRequest",
@@ -23972,23 +24159,6 @@
             "mangledName": "$sSE"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
       },
       {
         "kind": "Import",
@@ -28683,23 +28853,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "GetConversationsCountRequest",
         "printedName": "GetConversationsCountRequest",
@@ -29686,23 +29839,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
       },
       {
         "kind": "Import",
@@ -33747,23 +33883,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "SubmitPollRequest",
         "printedName": "SubmitPollRequest",
@@ -34020,23 +34139,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
       },
       {
         "kind": "Import",
@@ -38029,23 +38131,6 @@
       },
       {
         "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -38906,23 +38991,6 @@
             "mangledName": "$sSE"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
       },
       {
         "kind": "Import",
@@ -40897,23 +40965,6 @@
             "mangledName": "$s13LikeMindsChat25RealmObjectChangeObserverP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
       },
       {
         "kind": "Import",
@@ -61054,23 +61105,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "PutReactionRequest",
         "printedName": "PutReactionRequest",
@@ -61371,8 +61405,8 @@
             "children": [
               {
                 "kind": "Function",
-                "name": "setSearch",
-                "printedName": "setSearch(_:)",
+                "name": "search",
+                "printedName": "search(_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -61388,8 +61422,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC03setD0yAESSF",
-                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC03setD0yAESSF",
+                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC6searchyAESSF",
+                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC6searchyAESSF",
                 "moduleName": "LikeMindsChat",
                 "declAttributes": [
                   "AccessControl"
@@ -61398,8 +61432,8 @@
               },
               {
                 "kind": "Function",
-                "name": "setFollowStatus",
-                "printedName": "setFollowStatus(_:)",
+                "name": "followStatus",
+                "printedName": "followStatus(_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -61415,8 +61449,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC15setFollowStatusyAESbF",
-                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC15setFollowStatusyAESbF",
+                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC12followStatusyAESbF",
+                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC12followStatusyAESbF",
                 "moduleName": "LikeMindsChat",
                 "declAttributes": [
                   "AccessControl"
@@ -61425,8 +61459,8 @@
               },
               {
                 "kind": "Function",
-                "name": "setPage",
-                "printedName": "setPage(_:)",
+                "name": "page",
+                "printedName": "page(_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -61442,8 +61476,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC7setPageyAESiF",
-                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC7setPageyAESiF",
+                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC4pageyAESiF",
+                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC4pageyAESiF",
                 "moduleName": "LikeMindsChat",
                 "declAttributes": [
                   "AccessControl"
@@ -61452,8 +61486,8 @@
               },
               {
                 "kind": "Function",
-                "name": "setPageSize",
-                "printedName": "setPageSize(_:)",
+                "name": "pageSize",
+                "printedName": "pageSize(_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -61469,8 +61503,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC11setPageSizeyAESiF",
-                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC11setPageSizeyAESiF",
+                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC8pageSizeyAESiF",
+                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC8pageSizeyAESiF",
                 "moduleName": "LikeMindsChat",
                 "declAttributes": [
                   "AccessControl"
@@ -61479,8 +61513,8 @@
               },
               {
                 "kind": "Function",
-                "name": "setSearchType",
-                "printedName": "setSearchType(_:)",
+                "name": "searchType",
+                "printedName": "searchType(_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -61496,8 +61530,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC03setD4TypeyAESSF",
-                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC03setD4TypeyAESSF",
+                "usr": "s:13LikeMindsChat21SearchChatroomRequestC7BuilderC10searchTypeyAESSF",
+                "mangledName": "$s13LikeMindsChat21SearchChatroomRequestC7BuilderC10searchTypeyAESSF",
                 "moduleName": "LikeMindsChat",
                 "declAttributes": [
                   "AccessControl"
@@ -63998,23 +64032,6 @@
             "mangledName": "$sSe"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
       },
       {
         "kind": "Import",
@@ -71603,23 +71620,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "RealmSwift",
-        "printedName": "RealmSwift",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsChat",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "ShareChatroomUrlRequest",
         "printedName": "ShareChatroomUrlRequest",
@@ -72157,34 +72157,6 @@
       "offset": 1057,
       "length": 21,
       "value": "\"conv_reactions_meta\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ConversationRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 365,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ConversationRO.swift",
-      "kind": "StringLiteral",
-      "offset": 527,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ConversationRO.swift",
-      "kind": "StringLiteral",
-      "offset": 571,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ConversationRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 840,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/DBKey.swift",
@@ -73286,13 +73258,6 @@
       "value": "\"CommunityClient\""
     },
     {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/WidgetRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 177,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/CoreFeed\/Logout\/LogoutRequest.swift",
       "kind": "StringLiteral",
       "offset": 1409,
@@ -73305,6 +73270,223 @@
       "offset": 1449,
       "length": 14,
       "value": "\"device_token\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5798,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/AttachmentRO.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/PollRO.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/PollRO.swift",
+      "kind": "StringLiteral",
+      "offset": 227,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ChatroomRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 249,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ChatroomRO.swift",
+      "kind": "IntegerLiteral",
+      "offset": 374,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ChatroomRO.swift",
+      "kind": "IntegerLiteral",
+      "offset": 651,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ChatroomRO.swift",
+      "kind": "IntegerLiteral",
+      "offset": 701,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ChatroomRO.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1390,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ChatroomRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1438,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ChatroomRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2055,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ChatroomRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2148,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/MemberRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 245,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/MemberRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 604,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/MemberRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 646,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/AppConfigRO.swift",
+      "kind": "IntegerLiteral",
+      "offset": 207,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/AppConfigRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 187,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/AppConfigRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 312,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/AppConfigRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 363,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/AppConfigRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 416,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/UserRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 177,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/UserRO.swift",
+      "kind": "IntegerLiteral",
+      "offset": 468,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/CommunityRO.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/CommunityRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 251,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/CommunityRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 484,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/LastConversationRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 201,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ConversationRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 365,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ConversationRO.swift",
+      "kind": "StringLiteral",
+      "offset": 527,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ConversationRO.swift",
+      "kind": "StringLiteral",
+      "offset": 571,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/ConversationRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 840,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/LMDBObject\/WidgetRO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 177,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/DirectMessage\/Request\/CreateDMChatroomRequest.swift",
@@ -73734,62 +73916,6 @@
       "value": "\"share_link\""
     },
     {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ChatroomRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 249,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ChatroomRO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 374,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ChatroomRO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 651,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ChatroomRO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 701,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ChatroomRO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1390,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ChatroomRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1438,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ChatroomRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2055,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/ChatroomRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2148,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/ExplorerFeed\/Request\/GetExploreFeedRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 537,
@@ -73909,13 +74035,6 @@
       "value": "\"conversation_id\""
     },
     {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/LastConversationRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 201,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/ExplorerFeed\/Response\/ConfigResponse.swift",
       "kind": "StringLiteral",
       "offset": 431,
@@ -74033,27 +74152,6 @@
       "offset": 1440,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/CommunityRO.swift",
-      "kind": "StringLiteral",
-      "offset": 274,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/CommunityRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 251,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/CommunityRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 484,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/GetConversationsCountRequest.swift",
@@ -75022,13 +75120,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5809,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Chatroom\/Response\/ShareChatroomUrlResponse.swift",
       "kind": "StringLiteral",
       "offset": 293,
@@ -75132,41 +75223,6 @@
       "offset": 1337,
       "length": 15,
       "value": "\"refresh_token\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/AppConfigRO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 207,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/AppConfigRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 187,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/AppConfigRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 312,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/AppConfigRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 363,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/AppConfigRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 416,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Chatroom\/Request\/ChatroomSyncRequest.swift",
@@ -75307,20 +75363,6 @@
       "offset": 386,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/UserRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 177,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/UserRO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 468,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Chatroom\/ChatroomClient.swift",
@@ -76158,14 +76200,14 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/DirectMessage\/DirectMessageClient.swift",
       "kind": "Array",
-      "offset": 543,
+      "offset": 541,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/DirectMessage\/DirectMessageClient.swift",
       "kind": "StringLiteral",
-      "offset": 580,
+      "offset": 578,
       "length": 21,
       "value": "\"DirectMessageClient\""
     },
@@ -76802,14 +76844,14 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/ChatDBUtil.swift",
       "kind": "Array",
-      "offset": 4167,
+      "offset": 4165,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/ChatDBUtil.swift",
       "kind": "Array",
-      "offset": 4779,
+      "offset": 4777,
       "length": 2,
       "value": "[]"
     },
@@ -77064,13 +77106,6 @@
       "offset": 668,
       "length": 12,
       "value": "\"SyncWorker\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/AttachmentRO.swift",
-      "kind": "StringLiteral",
-      "offset": 202,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/PutReactionRequest.swift",
@@ -77381,27 +77416,6 @@
       "value": "\"sub_title\""
     },
     {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/MemberRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 245,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/MemberRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 604,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/MemberRO.swift",
-      "kind": "BooleanLiteral",
-      "offset": 646,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/CoreFeed\/RefreshUser\/RefreshAccessTokenResponse.swift",
       "kind": "StringLiteral",
       "offset": 327,
@@ -77558,28 +77572,28 @@
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/ConversationDBService.swift",
       "kind": "Array",
-      "offset": 969,
+      "offset": 967,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/ConversationDBService.swift",
       "kind": "Array",
-      "offset": 1541,
+      "offset": 1537,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/ConversationDBService.swift",
       "kind": "Array",
-      "offset": 2082,
+      "offset": 2076,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/ConversationDBService.swift",
       "kind": "Array",
-      "offset": 2593,
+      "offset": 2585,
       "length": 2,
       "value": "[]"
     },
@@ -77930,20 +77944,6 @@
       "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/External\/Conversation\/Request\/UpdateConversationUploadWorkerUUIDRequest.swift",
       "kind": "StringLiteral",
       "offset": 508,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/PollRO.swift",
-      "kind": "StringLiteral",
-      "offset": 190,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/anuragtyagi\/Documents\/GitHub\/likeminds-chat-ios-data\/LikeMindsChat\/Models\/RealmObject\/PollRO.swift",
-      "kind": "StringLiteral",
-      "offset": 227,
       "length": 2,
       "value": "\"\""
     },

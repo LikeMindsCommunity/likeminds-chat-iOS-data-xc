@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name LikeMindsChat
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LikeMindsChat
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Alamofire
 import FirebaseCore
@@ -27,20 +27,6 @@ public struct GetExploreFeedResponse : Swift.Decodable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
-}
-public enum ConversationStatus : Swift.String, RealmSwift.PersistableEnum {
-  case sending
-  case sent
-  case failed
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [LikeMindsChat.ConversationStatus]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [LikeMindsChat.ConversationStatus] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers public class DeleteReactionRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.DeleteReactionRequest.Builder
@@ -572,17 +558,6 @@ public struct LMChatTokenResponse : Swift.Decodable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public enum RealmDatabaseAction {
-  case add
-  case insert
-  case update
-  case remove
-  public static func == (a: LikeMindsChat.RealmDatabaseAction, b: LikeMindsChat.RealmDatabaseAction) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 @_hasMissingDesignatedInitializers public class EditConversationRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.EditConversationRequest.Builder
   @_hasMissingDesignatedInitializers public class Builder {
@@ -614,8 +589,33 @@ public struct PostPollConversationResponse : Swift.Decodable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public enum LMDatabaseAction {
+  case add
+  case insert
+  case update
+  case remove
+  public static func == (a: LikeMindsChat.LMDatabaseAction, b: LikeMindsChat.LMDatabaseAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct GetHomeFeedResponse : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
+}
+public enum ConversationStatus : Swift.String, RealmSwift.PersistableEnum {
+  case sending
+  case sent
+  case failed
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [LikeMindsChat.ConversationStatus]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [LikeMindsChat.ConversationStatus] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class CreateDMChatroomRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.CreateDMChatroomRequest
@@ -2082,11 +2082,11 @@ public enum UserRole : Swift.String, Swift.Codable {
 @_hasMissingDesignatedInitializers public class SearchChatroomRequest : Swift.Encodable {
   public static func builder() -> LikeMindsChat.SearchChatroomRequest.Builder
   @_hasMissingDesignatedInitializers public class Builder {
-    public func setSearch(_ search: Swift.String) -> LikeMindsChat.SearchChatroomRequest.Builder
-    public func setFollowStatus(_ followStatus: Swift.Bool) -> LikeMindsChat.SearchChatroomRequest.Builder
-    public func setPage(_ page: Swift.Int) -> LikeMindsChat.SearchChatroomRequest.Builder
-    public func setPageSize(_ pageSize: Swift.Int) -> LikeMindsChat.SearchChatroomRequest.Builder
-    public func setSearchType(_ searchType: Swift.String) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func search(_ search: Swift.String) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func followStatus(_ followStatus: Swift.Bool) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func page(_ page: Swift.Int) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func pageSize(_ pageSize: Swift.Int) -> LikeMindsChat.SearchChatroomRequest.Builder
+    public func searchType(_ searchType: Swift.String) -> LikeMindsChat.SearchChatroomRequest.Builder
     public func build() -> LikeMindsChat.SearchChatroomRequest
     @objc deinit
   }
@@ -2352,8 +2352,8 @@ extension LikeMindsChat.BlockMemberRequest.BlockState : Swift.RawRepresentable {
 extension LikeMindsChat.DMStatusRequestFrom : Swift.Equatable {}
 extension LikeMindsChat.DMStatusRequestFrom : Swift.Hashable {}
 extension LikeMindsChat.DMStatusRequestFrom : Swift.RawRepresentable {}
-extension LikeMindsChat.RealmDatabaseAction : Swift.Equatable {}
-extension LikeMindsChat.RealmDatabaseAction : Swift.Hashable {}
+extension LikeMindsChat.LMDatabaseAction : Swift.Equatable {}
+extension LikeMindsChat.LMDatabaseAction : Swift.Hashable {}
 extension LikeMindsChat.LoadConversationType : Swift.Equatable {}
 extension LikeMindsChat.LoadConversationType : Swift.Hashable {}
 extension LikeMindsChat.LoadConversationType : Swift.RawRepresentable {}
